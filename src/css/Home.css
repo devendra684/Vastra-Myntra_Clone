@@ -38,9 +38,9 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
-h1{
+.imgh1{
     text-align: left;
-    margin: 50px;
+    margin: 70px;
     text-transform: uppercase;
 }
 
