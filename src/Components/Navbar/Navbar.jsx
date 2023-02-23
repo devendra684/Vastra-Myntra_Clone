@@ -1,12 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 import "./Navbar.css";
-import { BeautyNav } from './MiniParts/BeautyNav'
-import { WomenNav } from './MiniParts/WomenNav'
-import { KidsNav } from './MiniParts/KidsNav'
-import { HomeLivingNav } from './MiniParts/HomeLiving'
-import { MenNav } from './MiniParts/Men'
-import { StudioNav } from './MiniParts/Studio'
+import { BeautyNav } from './Beauty'
+import { WomenNav } from './Women'
+import { KidsNav } from './Kids'
+import { HomeLivingNav } from './Home&Living'
+import { MenNav } from './Men'
+import { StudioNav } from './Studio'
 
 // import { useAuth } from "../../Context/AuthContext";
 
