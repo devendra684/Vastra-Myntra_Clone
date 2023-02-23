@@ -3,7 +3,7 @@ import { HomeDataCard } from "../Components/HomeDataCard";
 import { HomeData } from "../Redux/HomeData";
 import "../css/Home.css";
 
-export const Home = () => {
+const Home = () => {
   const [BrandsToBag, setBrandsToBag] = useState([]);
   const [ShopByCategory, setShopByCategory] = useState([]);
   const [OmgDeals, setOmgDeals] = useState([]);
@@ -64,3 +64,6 @@ export const Home = () => {
     </div>
   );
 };
+
+
+export default Home;
