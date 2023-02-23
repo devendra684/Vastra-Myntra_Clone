@@ -26,7 +26,7 @@ const Home = () => {
         <h1 className="imgh1">Brand to bag</h1>
         <div className="BrandsToBag">
           {BrandsToBag.length > 0 &&
-            BrandsToBag.map((el) => <HomeDataCard key={el.id} {...el} />)}
+            BrandsToBag.map((el) =><HomeDataCard key={el.id} {...el} />)}
         </div>
       </div>
 

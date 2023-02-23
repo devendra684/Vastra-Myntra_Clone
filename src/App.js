@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import AllRoutes from './Components/AllRoutes';
-import { Navbar } from './Components/Navbar/Navbar';
+// import { Navbar } from './Components/Navbar/Navbar';
 //import { auth } from './Components/firebase';
 //import Navbar from './Components/Navbar';
 //import Footer from './Components/Footer'
@@ -24,7 +24,7 @@ function App() {
     <div className="App">
 
       <AllRoutes />
-      <Navbar/>
+      {/* <Navbar/> */}
       {/* <Home/> */}
     </div>
   );
