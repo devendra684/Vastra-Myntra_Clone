@@ -3,7 +3,7 @@ import AllRoutes from './Components/AllRoutes';
 //import { auth } from './Components/firebase';
 //import Navbar from './Components/Navbar';
 //import Footer from './Components/Footer'
-
+import { Home } from './Pages/Home';
 
 function App() {
   // const [userName, setUserName]=useState("");
@@ -20,7 +20,9 @@ function App() {
   // },[])
   return (
     <div className="App">
+
       <AllRoutes />
+      <Home/>
     </div>
   );
 }
