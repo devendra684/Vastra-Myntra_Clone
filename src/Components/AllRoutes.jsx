@@ -5,6 +5,7 @@ import Home from "../Pages/Home";
 import PageNotFound from "../Pages/PageNotFound";
 // import Register from "../Pages/Register";
 // import Product from "../Pages/Product";
+// import Cards from "./men page/Product/Cards";
 import AdminDashboard from "../Admin/AdminDashboard";
 // import SingleProductPage from "../Pages/SingleProductPage";
 import AddProductsPage from "../Admin/AddProductsPage";
@@ -19,6 +20,7 @@ import AdminProfilePage from "../Admin/AdminProfilePage";
 // import Payment from "../Pages/Payment";
 // import Success from "../Pages/Success";
 import { PrivateRoute } from "./PrivateRouting";
+// import { Navbar } from '../Components/Navbar/Navbar';
 
 const AllRoutes = () => {
   // console.log(userName);
@@ -26,8 +28,11 @@ const AllRoutes = () => {
   return (
     <div>
       <Routes>
+        {/* <Route path="/" element={<Navbar />}></Route> */}
         <Route path="/" element={<Home />}></Route>
         {/* <Route path="/product" element={<Product />}></Route> */}
+        
+        {/* <Route path="/Cards" element={<Cards />}></Route> */}
         {/* <Route path="/product/:id" element={<SingleProductPage />}></Route> */}
         <Route
           path="/wishlist"
