@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { HomeDataCard } from "../Components/HomeDataCard";
 import { HomeData, HomeData2 } from "../Redux/HomeData";
+import { slider as images } from "../Redux/HomeData";
 import "../css/Home.css";
+import SimpleImageSlider from "react-simple-image-slider";
 
 const Home = () => {
   const [OmgDeals, setOmgDeals] = useState([]);
@@ -56,6 +58,15 @@ const Home = () => {
             HoliDeals.map((el) =><HomeDataCard key={el.id} {...el} />)}
         </div>
       </div>
+=======
+      <SimpleImageSlider
+        width="100%"
+        height="400px"
+        images={images}
+        showBullets={true}
+        showNavs={true}
+        autoPlay={true}
+      />
 
       <div className="BrandsToBagFather">
         <h1 className="imgh1">Brand to bag</h1>
@@ -99,6 +110,5 @@ const Home = () => {
     </div>
   );
 };
-
 
 export default Home;
