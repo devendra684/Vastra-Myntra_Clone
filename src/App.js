@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import AllRoutes from './Components/AllRoutes';
-import { Navbar } from './Components/Navbar/Navbar';
-import { LoginOrSignUp } from './Pages/LoginOrSignUp';
+// import { Navbar } from './Components/Navbar/Navbar';
+// import { LoginOrSignUp } from './Pages/LoginOrSignUp';
 //import { auth } from './Components/firebase';
 // import Navbar from './Components/Navbar';
 //import Footer from './Components/Footer'
@@ -24,8 +24,8 @@ function App() {
   return (
     <div className="App">
       <AllRoutes />
-      <Navbar/>
-      <LoginOrSignUp/>  
+      {/* <Navbar/> */}
+      {/* <LoginOrSignUp/>   */}
       {/* <Home/> */}
     </div>
   );

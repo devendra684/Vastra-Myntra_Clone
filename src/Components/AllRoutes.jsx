@@ -20,6 +20,7 @@ import AdminProfilePage from "../Admin/AdminProfilePage";
 // import Payment from "../Pages/Payment";
 // import Success from "../Pages/Success";
 import { PrivateRoute } from "./PrivateRouting";
+// import { Navbar } from '../Components/Navbar/Navbar';
 
 const AllRoutes = () => {
   // console.log(userName);
@@ -27,6 +28,7 @@ const AllRoutes = () => {
   return (
     <div>
       <Routes>
+        {/* <Route path="/" element={<Navbar />}></Route> */}
         <Route path="/" element={<Home />}></Route>
         {/* <Route path="/product" element={<Product />}></Route> */}
         

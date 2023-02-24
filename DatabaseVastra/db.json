@@ -6219,23 +6219,15 @@
         },
         {
         "id": "H14",
-        "image": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/aa4658b5-d723-4652-9ea1-00456b355c3a1645602467046-Kurta-Sets.jpg"
-        },
-        {
-        "id": "H15",
         "image": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/aae4be67-e611-47f4-b94e-92a16a36df731645602467007-Hangbags.jpg"
         },
         {
-        "id": "H16",
+        "id": "H15",
         "image": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/b34a30a6-504b-4c94-b7e1-61391d536bc51645602467038-Jewellery.jpg"
         },
         {
-        "id": "H17",
+        "id": "H16",
         "image": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/f9ca5609-b634-42d4-8c08-a8eaebb818b71645602467085-Sarees.jpg"
-        },
-        {
-        "id": "H18",
-        "image": "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/fb091b07-c275-4578-b08d-b4f93dfe9e841645602466976-Beauty.jpg"
         }
     ],
     "HoliDeals":[
@@ -6270,10 +6262,6 @@
         {
         "id": "H8",
         "image": "https://assets.myntassets.com/f_auto,q_auto:eco,dpr_1.3,w_360,c_limit,fl_progressive/assets/images/2023/2/20/58a78ed8-0f8d-4262-8430-efbbcac3c1b61676877830038-HowDoYouCelebrateHoli_CollegeHoli-1.jpg"
-        },
-        {
-        "id": "H9",
-        "image": "https://assets.myntassets.com/f_auto,q_auto:eco,dpr_1.3,w_360,c_limit,fl_progressive/assets/images/2023/2/20/22c4b317-88c6-4d34-b19f-ecca664f2b851676877830004-HowDoYouCelebrateHoli_BFFCatchups.jpg"
         }
     ],
     "HomePageBrandsToBag":[
@@ -6644,7 +6632,51 @@
             "lastSignInTime": ""
         },
             "image": ""
-        
+        },
+        {
+            "id":1,
+            "name": "Prince Sharma",
+            "email": "ps@gmail.com",
+            "password": "ps12345",
+            "contact": "1234567800",
+            "isAuth":true,
+            "logindetails": {
+                "createdAt": "",
+                "creationTime": "",
+                "lastLoginAt": "",
+            "lastSignInTime": ""
+        },
+            "image": ""
+        },
+        {
+            "id":1,
+            "name": "Ravi",
+            "email": "Ravi@gmail.com",
+            "password": "Ravi12345",
+            "contact": "1234567800",
+            "isAuth":true,
+            "logindetails": {
+                "createdAt": "",
+                "creationTime": "",
+                "lastLoginAt": "",
+            "lastSignInTime": ""
+        },
+            "image": ""
+        },
+        {
+            "id":1,
+            "name": "Ruchi",
+            "email": "Ruchi@gmail.com",
+            "password": "Ruchi12345",
+            "contact": "1234567800",
+            "isAuth":true,
+            "logindetails": {
+                "createdAt": "",
+                "creationTime": "",
+                "lastLoginAt": "",
+            "lastSignInTime": ""
+        },
+            "image": ""
         }
     ],
     "AdminData":{"id":1,
