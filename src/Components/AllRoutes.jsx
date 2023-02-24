@@ -5,6 +5,7 @@ import Home from "../Pages/Home";
 import PageNotFound from "../Pages/PageNotFound";
 // import Register from "../Pages/Register";
 // import Product from "../Pages/Product";
+// import Cards from "./men page/Product/Cards";
 import AdminDashboard from "../Admin/AdminDashboard";
 // import SingleProductPage from "../Pages/SingleProductPage";
 import AddProductsPage from "../Admin/AddProductsPage";
@@ -28,6 +29,8 @@ const AllRoutes = () => {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         {/* <Route path="/product" element={<Product />}></Route> */}
+        
+        {/* <Route path="/Cards" element={<Cards />}></Route> */}
         {/* <Route path="/product/:id" element={<SingleProductPage />}></Route> */}
         <Route
           path="/wishlist"
