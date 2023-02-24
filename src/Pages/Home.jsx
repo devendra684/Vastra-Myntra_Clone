@@ -13,8 +13,6 @@ const Home = () => {
   const [BudgetToBuys, setBudgetToBuys] = useState([]);
 
   useEffect(() => {
-    // setInterval(() => {}, 1000);
-
     HomeData().then((res) => {
       setBrandsToBag(res.HomePageBrandsToBag);
       setShopByCategory(res.HomePageShopByCategory);
