@@ -1,0 +1,59 @@
+.Login_Master {
+  margin: auto;
+  margin-top: 30px;
+  width: 500px;
+  height: auto;
+  border: 2px solid black;
+}
+
+.form {
+  margin: auto;
+  /* margin-top: 30px; */
+  padding: 30px;
+}
+
+.formh1 {
+  text-align: left;
+  margin-left: 10px;
+  font-family: Assistant;
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: rgb(45, 44, 44);
+}
+
+.forminput {
+  border: 1px solid rgb(31, 30, 30);
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+  padding: 10px;
+}
+
+.forminput h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.forminput input {
+  width: 330px;
+  display: flex;
+  outline: none;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-left: -100px;
+}
+
+.termsAndCondition {
+  margin-top: 30px;
+  width: 110%;
+  display: flex;
+}
+
+.termsAndCondition h1 {
+  cursor: pointer;
+  color: #ff3c6f;
+  font-weight: 600;
+  margin: 10px 0px 10px;
+}
