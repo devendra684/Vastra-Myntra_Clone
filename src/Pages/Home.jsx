@@ -12,7 +12,6 @@ const Home = () => {
   const [GrandBrand, setGrandBrand] = useState([]);
   const [BudgetToBuys, setBudgetToBuys] = useState([]);
 
-
   useEffect(() => {
     // setInterval(() => {}, 1000);
 
