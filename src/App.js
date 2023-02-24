@@ -24,7 +24,6 @@ function App() {
   return (
     <div className="App">
       <AllRoutes />
-      {/* <Navbar/> */}
       <Navbar/>
       <LoginOrSignUp/>  
       {/* <Home/> */}
