@@ -1,3 +1,9 @@
+/* *{
+   word-wrap: break-word;
+   word-wrap: normal;
+   word-wrap: inherit;
+   word-wrap: break-word;
+} */
 .inp {
     height: 35px;
     width: 550px;
