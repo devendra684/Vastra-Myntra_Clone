@@ -3,12 +3,13 @@
   margin-top: 30px;
   width: 500px;
   height: auto;
-  border: 2px solid black;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+
 }
 
 .form {
   margin: auto;
-  /* margin-top: 30px; */
   padding: 30px;
 }
 
@@ -23,7 +24,8 @@
 }
 
 .forminput {
-  border: 1px solid rgb(31, 30, 30);
+  border: 1px solid rgb(119, 117, 117);
+  margin-left: 10px;
   width: 400px;
   display: flex;
   justify-content: space-between;
@@ -35,6 +37,7 @@
 .forminput h1 {
   font-size: 20px;
   font-weight: 500;
+  color: #ff3c6f;
 }
 .forminput input {
   width: 330px;
@@ -43,17 +46,82 @@
   font-size: 20px;
   padding-left: 10px;
   margin-left: -100px;
+  /* color: #ff3c6f; */
 }
 
 .termsAndCondition {
   margin-top: 30px;
-  width: 110%;
+  width: 90%;
+  margin-left: 10px;
+  font-size: 14px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.termsAndCondition p {
+  color: grey;
+}
 .termsAndCondition h1 {
   cursor: pointer;
   color: #ff3c6f;
-  font-weight: 600;
+  font-weight: 700;
+  margin: 10px 0px 10px;
+}
+
+.buttonFather {
+  margin: auto;
+  margin: 20px 0px 0px 10px;
+}
+
+.button {
+  width: 100%;
+  height: 50px;
+  background-color: #ff3c6f;
+  color: white;
+}
+
+.OTPMaster {
+  width: 400px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 60px;
+  margin-top: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  padding-bottom: 100px;
+
+
+}
+
+.OTPMaster img {
+  width: 100px;
+}
+
+.OTPInput {
+  margin-top: 20px;
+}
+
+.loginProblem {
+  margin-top: 15px;
+  width: 90%;
+  margin-left: 2px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loginProblem p {
+  color: grey;
+}
+.loginProblem h1 {
+  cursor: pointer;
+  color: #ff3c6f;
+  font-weight: 700;
   margin: 10px 0px 10px;
 }
