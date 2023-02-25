@@ -20,7 +20,7 @@ const ProductItem = () => {
                             
                             const { id, pname, product, category, imgscr,img2, price, visible } = value;
                             
-                            {/* console.log(visible) */}
+                            /* console.log(visible) */
                             let linkto = "/details/" + id;
                             
                             return visible ?
