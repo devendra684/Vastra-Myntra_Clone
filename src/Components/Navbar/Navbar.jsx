@@ -7,13 +7,13 @@ import { KidsNav } from './Kids'
 import { HomeLivingNav } from './Home&Living'
 import { MenNav } from './Men'
 import { StudioNav } from './Studio'
-import V_Logo from '../../Assets/V_Logo.jpeg'
 
 // import { useAuth } from "../../Context/AuthContext";
 
 const Div = styled.nav`
    position: fixed;
    display: flex;
+   justify-content: center;
    padding: 5px 10px;
    width: 100%;
    height: 70px; 
@@ -40,10 +40,14 @@ export const Navbar = () => {
    // border: '1px solid red',
                      width: "75%",
                      height: "50px",
-                     marginLeft: "30%",
+                     marginLeft: "15%",
                      // marginRight: "30%",
                   }}
-                  src={V_Logo}
+
+                  src="VastraLogo.png"
+
+                  // src={V_Logo}
+
                   alt=""
                />
             </Link>
@@ -61,7 +65,11 @@ export const Navbar = () => {
                      paddingBottom: "10px",
                      paddingLeft: "20px",
                      paddingRight: "5px",
+
+                     whiteSpace: "nowrap",
+
                      wordWrap: 'normal',
+
                      //   hoverBorderBottom:"5px solid #ee5f73"
                   }}
                   to="/men"
@@ -85,7 +93,11 @@ export const Navbar = () => {
                      paddingBottom: "10px",
                      paddingLeft: "5px",
                      paddingRight: "5px",
+
+                     whiteSpace: "nowrap",
+
                      wordWrap: 'normal',
+
                   }}
                   to="/women"
                >
@@ -108,6 +120,7 @@ export const Navbar = () => {
                      paddingLeft: "5px",
                      paddingRight: "5px",
                      marginBottom: "-2%",
+                     whiteSpace: "nowrap",
                      wordWrap: 'normal',
                   }}
                   to="/kids"
@@ -133,6 +146,7 @@ export const Navbar = () => {
                      paddingLeft: "5px",
                      paddingRight: "5px",
                      marginBottom: "-2%",
+                     whiteSpace: "nowrap",
                      // wordWrap: 'normal',
                   }}
                   to="/home&living"
@@ -156,6 +170,7 @@ export const Navbar = () => {
                      paddingLeft: "5px",
                      paddingRight: "5px",
                      marginBottom: "-2%",
+                     whiteSpace: "nowrap",
                      wordWrap: 'normal',
                   }}
                   to="/Beauty"
@@ -179,6 +194,9 @@ export const Navbar = () => {
                      paddingLeft: "5px",
                      paddingRight: "5px",
                      marginBottom: "-2%",
+
+                     whiteSpace: "nowrap",
+
                      wordWrap: 'normal',
                   }}
                   to="/Studio"
@@ -205,6 +223,17 @@ export const Navbar = () => {
                />
             </div>
 
+
+            <div style={{display:"flex", justifyContent:"space-evenly", width:"20%", marginTop:"10px"}}>
+               <p style={{ marginLeft: "4%", cursor: "pointer" }}>
+                  <img
+                     style={{  fontSize: "12px", width: "20px", display: "inline" }}
+                     src="https://cdn-icons-png.flaticon.com/512/3106/3106773.png"
+                     alt=""
+                  />
+                  <br></br>
+                  <span >
+                     {/* {" "}
             <p style={{ marginLeft: "4%", cursor: "pointer" }}>
                <img
                   style={{ 
@@ -215,34 +244,29 @@ export const Navbar = () => {
                   alt=""
                />
                {/* <br></br> */}
-               <span >
                   {/* {" "}
                   {currentUser ? (
                      <Link onClick={logout} to={"/"} className="rightLink" >
                         Logout
                      </Link>
                   ) : ( */}
-                  <Link to={"/login"} className="rightLink">Profile</Link>
-                  {/* )} */}
-               </span>
-            </p>
+                     <Link to={"/login"} className="rightLink">Profile</Link>
+                     {/* )} */}
+                  </span>
+               </p>
 
-            <p style={{ marginLeft: "2%", cursor: "pointer" }}>
-               <img
-                  style={{
-                     // border: '1px solid red',
-                     wordWrap: 'normal', 
-                     marginLeft: "15%", fontSize: "12px", width: "20px" }}
-                  src="https://cdn-icons-png.flaticon.com/512/7299/7299761.png"
-                  alt=""
-               />
-               {/* <br></br> */}
-               <span>
-                  <Link to={"/wishlist"} className="rightLink">Wishlist</Link>
-               </span>
-            </p>
+               <p style={{ marginLeft: "2%", cursor: "pointer" }}>
+                  <img
+                     style={{ marginLeft: "15%", fontSize: "12px", width: "20px", display: "inline" }}
+                     src="https://cdn-icons-png.flaticon.com/512/7299/7299761.png"
+                     alt=""
+                  />
+                  <span>
+                     <Link to={"/wishlist"} className="rightLink">Wishlist</Link>
+                  </span>
+               </p>
 
-            <Link
+               {/* <Link
                style={{
                      // border: '1px solid red',
                      wordWrap: 'normal',
@@ -250,25 +274,39 @@ export const Navbar = () => {
                   fontSize: "15px",
                   textDecoration: "none",
                   color: "#282C3F",
+                  whiteSpace: "nowrap"
                }}
                // to="/cart"
-               to="/bag"
-            >
+               to={"/bag"}
+            > */}
                {" "}
+               {/* <p style={{ marginLeft: "2%", cursor: "pointer", gap:"0px" }}> */}
+
                <p style={{ 
                      // border: '1px solid red', 
                      wordWrap: 'normal',
                      marginLeft: "2%", cursor: "pointer" }}>
                   <img
-                     style={{ marginLeft: "15%", fontSize: "12px", width: "20px" }}
+                     style={{ marginLeft: "15%", fontSize: "12px", width: "20px",marginBottom:"5px" }}
                      src="https://cdn-icons-png.flaticon.com/512/1174/1174408.png"
                      alt=""
                   />
-                  {/* <br></br> */}
-                  <span 
-                     style={{  wordWrap: 'normal'}} className="rightLink">Bag</span>
+                  
+                  
+                  <span>
+                     <Link style={{
+                        marginLeft: "2%",
+                        fontSize: "12px",
+                        textDecoration: "none",
+                        color: "#282C3F",
+                        whiteSpace: "nowrap",
+                     }} to={"/bag"} className="rightLink">Bag</Link>
+                  </span>
+               
+
                </p>
-            </Link>
+               {/* </Link> */}
+            </div>
          </Div>
       </>
    );

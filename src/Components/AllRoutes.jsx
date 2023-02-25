@@ -20,6 +20,10 @@ import AdminProfilePage from "../Admin/AdminProfilePage";
 // import Payment from "../Pages/Payment";
 // import Success from "../Pages/Success";
 import { PrivateRoute } from "./PrivateRouting";
+import Details from "../Pages/mensPage/Details";
+import HomePage from "../Pages/mensPage/HomePage";
+import Cards from "./mensPage/Product/Cards";
+import ProductItem from "./mensPage/Product/ProductItem";
 // import { Navbar } from '../Components/Navbar/Navbar';
 
 const AllRoutes = () => {
@@ -30,6 +34,8 @@ const AllRoutes = () => {
       <Routes>
         {/* <Route path="/" element={<Navbar />}></Route> */}
         <Route path="/" element={<Home />}></Route>
+        <Route path="/HomePage" element={<HomePage/>}></Route>
+        <Route path="/details" element={ <Details/>  }></Route>
         {/* <Route path="/product" element={<Product />}></Route> */}
         
         {/* <Route path="/Cards" element={<Cards />}></Route> */}

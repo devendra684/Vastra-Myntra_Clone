@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart, removeFromWishList } from "../../redux/Reducer/data";
+import { addToCart, removeFromWishList } from "../../../Redux/mensPage/Reducer/data";
 import style from "./Modal.css";
 import Cards from "./Cards.css";
 import { NavLink } from "react-router-dom";

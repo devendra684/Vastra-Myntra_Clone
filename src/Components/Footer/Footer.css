@@ -1,0 +1,150 @@
+.Footerbody {
+    background-color: #fafbfc;
+    font-size: 100%;
+}
+
+hr {
+    width: 100%;
+    font-size: 1px;
+    margin-bottom: 2%;
+}
+
+.Footerclass {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 14%;
+    margin-right: 14%;
+    padding-bottom: 5%;
+}
+
+.Footerclassdiv1 {
+    width: 19%;
+    margin-top: 3%;
+    margin-left: 1%;
+    cursor: pointer;
+    text-align: left;
+    color: rgb(100, 100, 108);
+    /* line-height: 10px; */
+}
+
+.Footerclassdiv2 {
+    width: 35%;
+    margin-top: 3%;
+    margin-left: 1%;
+    cursor: pointer;
+    text-align: left;
+    /* line-height: 10px */
+}
+
+.Footerclassdiv2 h5{
+    font-size: 0.83em;
+    font-weight: bold;
+}
+
+.socialIcon{
+    width: 25px;
+    height: 25px;
+}
+
+.footericon1 {
+    width: 50%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.footericon2 {
+    width: 45%;
+    margin-left: 5px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+}
+
+.colorblack {
+    color: black;
+    font-weight: bold;
+    font-size: 0.83em;
+}
+
+.footer4 {
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 80%;
+}
+
+.footer5 {
+
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2%;
+    margin-left: 15%;
+}
+
+.footer_popular {
+
+    width: 70%;
+    margin: 1%;
+    margin-left: 15%;
+    font-weight: 700;
+    color: rgb(19, 19, 21);
+    text-align: left;
+}
+
+.footer_popular_details {
+
+    width: 70%;
+    margin-left: 15%;
+    color: rgb(100, 100, 108);
+    margin-bottom: 2%;
+    text-align: left;
+}
+
+.bottom {
+    color: rgb(100, 100, 108);
+}
+
+.footerspan {
+    color: rgb(71, 71, 247);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 922px) {
+    .Footerclass {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
+        margin-left: 14%;
+        margin-right: 14%;
+
+    }
+
+
+    .Footerclassdiv1 {
+        width: 45%;
+        line-height:13px;
+    }
+
+    .Footerclassdiv2 {
+        width: 45%;
+        line-height:13px;
+    }
+
+    .footer4 {
+        margin-top: 17%;
+        margin-left: 5%;
+        width: 100%;
+    }
+
+    .footericon1 {
+        width: 100%;
+    }
+
+    .footericon2 {
+        width: 100%;
+        margin-left: 5px;
+    }
+}

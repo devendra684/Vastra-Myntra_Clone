@@ -119,12 +119,7 @@
    
    .down>.flex>.a1 {
      width: 22%;
-     height: 12cm;
- 
- 
- 
- 
-    
+     height: 12cm    
    }
    .down>.flex>.a1> li {
      list-style: none;
@@ -165,24 +160,13 @@
    .down>.flex>.a2{
      width: 22%;
      height: 12cm;
-     background-color: rgb(245, 245, 246);
- 
-     
-    
- 
-   
+     background-color: rgb(245, 245, 246)
    }
- 
- 
    .down>.flex>.a2>li {
      list-style: none;
      padding: 1.5px;
      font-weight: 400;
-   }
- 
- 
- 
- 
+   } 
    .a2> ul > :nth-child(1) {
      font-size: 16px;
      font-weight: 700;
@@ -331,12 +315,11 @@
  
  .rightLink{
    font-weight: bold ;
-   color: #000000 !important;
+   color: #000000 ;
    text-decoration: none;
    font-size: 12px;
-   
  }
  
  .rightLink:hover{
- color: crimson !important;
+ color: crimson ;
  }

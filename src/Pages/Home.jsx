@@ -4,6 +4,7 @@ import { HomeData, slider as images } from "../Redux/HomeData";
 import "../css/Home.css";
 import SimpleImageSlider from "react-simple-image-slider";
 import { Navbar } from '../Components/Navbar/Navbar';
+import { Footer } from '../Components/Footer/Footer'
 // import { LoginOrSignUp } from './Pages/LoginOrSignUp';
 
 const Home = () => {
@@ -98,7 +99,9 @@ const Home = () => {
       <img className="Delivery" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto:eco,w_600,c_limit,fl_progressive/assets/images/retaillabs/2023/2/17/32b8f01e-4b71-446b-b103-668ed70873c71676653509048-M-Express-3-Days.gif" alt="Delivery-Express-3-Days" />
       
       <img className="Delivery" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto:eco,w_600,c_limit,fl_progressive/assets/images/retaillabs/2023/2/22/6d1c4d3d-6fd9-4b52-8dc0-4c8b7e2453e61677061466410-RTB--4-.jpg" alt="order & payment" />
+      <Footer/>
     </div>
+    
   );
 };
 

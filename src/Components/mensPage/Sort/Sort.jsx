@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
-import "../../helper.css";
-import { filter, sort } from "../../redux/Reducer/data";
+// import "../../helper.css";
+import { filter, sort } from "../../../Redux/mensPage/Reducer/data";
 import ProductData from "../Product/ProductData";
 import ProductTitle from "../DetailsPage/ProductTitle";
 

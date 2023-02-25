@@ -3,7 +3,7 @@ import { faBox } from '@fortawesome/free-solid-svg-icons';
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import { addToWishlist } from "../../redux/Reducer/data";
+import { addToWishlist } from "../../../Redux/mensPage/Reducer/data";
 
 const ProductItem = () => {
 
