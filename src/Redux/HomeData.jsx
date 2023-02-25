@@ -1,12 +1,10 @@
 import axios from "axios";
 
-export const HomeData = async() => {
+export const HomeData = async () => {
+  let res = await axios.get("https://vastra.onrender.com/HomePageData");
+  // let res= await axios.get("http://localhost:8080/HomePageData")
 
-let res= await axios.get("https://vastra.onrender.com/HomePageData")
-// let res= await axios.get("http://localhost:8080/HomePageData")
-
-  return res.data
-
+  return res.data;
 };
 
 export const slider = [
