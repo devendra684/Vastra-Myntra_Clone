@@ -32,20 +32,14 @@ const AllRoutes = () => {
         <Route
           path="/wishlist"
           // element={
-            // <PrivateRoute>
-              // <Wishlist />
-            //</PrivateRoute>
+          // <PrivateRoute>
+          // <Wishlist />
+          //</PrivateRoute>
           // }
-        >
-
-        </Route>
+        ></Route>
         <Route
           path="/cart"
-          element={
-            <PrivateRoute>
-              {/* <Cart /> */}
-            </PrivateRoute>
-          }
+          element={<PrivateRoute>{/* <Cart /> */}</PrivateRoute>}
         ></Route>
         <Route path="*" element={<PageNotFound />}></Route>
         {/* <Route path="/login" element={<Login />}></Route> */}
@@ -59,27 +53,15 @@ const AllRoutes = () => {
         <Route path="/admin-profile" element={<AdminProfilePage />}></Route>
         <Route
           path="/address"
-          element={
-            <PrivateRoute>
-              {/* <Address /> */}
-            </PrivateRoute>
-          }
+          element={<PrivateRoute>{/* <Address /> */}</PrivateRoute>}
         ></Route>
         <Route
           path="/payment"
-          element={
-            <PrivateRoute>
-              {/* <Payment /> */}
-            </PrivateRoute>
-          }
+          element={<PrivateRoute>{/* <Payment /> */}</PrivateRoute>}
         ></Route>
         <Route
           path="/success"
-          element={
-            <PrivateRoute>
-              {/* <Success /> */}
-            </PrivateRoute>
-          }
+          element={<PrivateRoute>{/* <Success /> */}</PrivateRoute>}
         ></Route>
       </Routes>
     </div>
