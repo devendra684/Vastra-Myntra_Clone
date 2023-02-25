@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "../../helper.css";
+// import "../../helper.css";
 import style from "./Filter.css";
 import ProductData from "../Product/ProductData";
 import { useDispatch, useSelector } from "react-redux";
-import { filter } from "../../redux/Reducer/data";
+import { filter } from "../../../Redux/mensPage/Reducer/data";
 
 const Filter = () => {
   // const filterData = useSelector((state) => state.appData.filters);

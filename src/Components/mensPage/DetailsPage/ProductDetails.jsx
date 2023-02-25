@@ -5,7 +5,7 @@ import {
   addToCart,
   addToWishlist,
   removeFromWishList,
-} from "../../redux/Reducer/data";
+} from "../../../Redux/mensPage/Reducer/data";
 
 const ProductDetails = (props) => {
   const wishlistData = useSelector((state) => state.appData.value.wishlist);

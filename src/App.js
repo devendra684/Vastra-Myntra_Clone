@@ -2,11 +2,11 @@ import React from 'react';
 import './App.css';
 import AllRoutes from './Components/AllRoutes';
 import { Navbar } from './Components/Navbar/Navbar';
-import { Footer } from './Components/Footer/Footer'
 //import { auth } from './Components/firebase';
-//import Navbar from './Components/Navbar';
+// import Navbar from './Components/Navbar';
 //import Footer from './Components/Footer'
 // import { Home } from './Pages/Home';
+import  Stylesss  from '../src/Components/mensPage/ProductItemCss/style'
 
 function App() {
   // const [userName, setUserName]=useState("");
@@ -23,11 +23,10 @@ function App() {
   // },[])
   return (
     <div className="App">
-
       <AllRoutes />
-      {/* <Navbar/>
-      <Footer/> */}
+      <Navbar />
       {/* <Home/> */}
+      {/* <Stylesss/> */}
     </div>
   );
 }

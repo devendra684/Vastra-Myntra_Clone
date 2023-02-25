@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import ProductData from "../../components/Product/ProductData";
+import ProductData from "../../../Components/mensPage/Product/ProductData";
 
 export const counterSlice = createSlice({
   initialState: {

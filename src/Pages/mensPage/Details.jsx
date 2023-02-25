@@ -1,12 +1,12 @@
 import React from "react";
-import ProductTitle from "../components/DetailsPage/ProductTitle";
+import ProductTitle from "../../Components/mensPage/DetailsPage/ProductTitle";
 import "./Details.css"
 
-import Style from "../helper.css"
-import ProductImages from "../components/DetailsPage/ProductImages";
-import ProductDetails from "../components/DetailsPage/ProductDetails";
+// import Style from "../helper.css"
+import ProductImages from "../../Components/mensPage/DetailsPage/ProductImages";
+import ProductDetails from "../../Components/mensPage/DetailsPage/ProductDetails";
 import { useParams } from "react-router-dom";
-import ProductData from "../components/Product/ProductData";
+import ProductData from "../../Components/mensPage/Product/ProductData";
 
 const Details = () => {
 

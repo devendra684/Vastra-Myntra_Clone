@@ -13,7 +13,7 @@ export default function PageNotFound() {
         bgGradient="linear( red, #2b3148)"
         backgroundClip="text"
       >
-        404
+          404
       </Heading>
       <Text
         fontSize="40px"

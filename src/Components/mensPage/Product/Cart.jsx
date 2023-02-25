@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { removeFromCart } from "../../redux/Reducer/data";
+import { removeFromCart } from "../../../Redux/mensPage/Reducer/data";
 import "./Modal.css";
 import "./Cards.css";
 

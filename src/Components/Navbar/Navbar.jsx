@@ -16,7 +16,7 @@ const Div = styled.nav`
    justify-content: center;
    padding: 5px 10px;
    width: 100%;
-   /* height: 70px; */
+   height: 70px; 
    top: 0;
    margin-left: 5%;
    right: 0;
@@ -37,12 +37,17 @@ export const Navbar = () => {
             <Link className="link1" to="/">
                <img
                   style={{
+   // border: '1px solid red',
                      width: "75%",
                      height: "50px",
                      marginLeft: "15%",
                      // marginRight: "30%",
                   }}
+
                   src="VastraLogo.png"
+
+                  // src={V_Logo}
+
                   alt=""
                />
             </Link>
@@ -51,6 +56,7 @@ export const Navbar = () => {
                <NavLink
                   className="link men"
                   style={{
+   // border: '1px solid red',
                      marginLeft: "3%",
                      fontWeight: "bold",
                      fontSize: "14px",
@@ -59,7 +65,11 @@ export const Navbar = () => {
                      paddingBottom: "10px",
                      paddingLeft: "20px",
                      paddingRight: "5px",
+
                      whiteSpace: "nowrap",
+
+                     wordWrap: 'normal',
+
                      //   hoverBorderBottom:"5px solid #ee5f73"
                   }}
                   to="/men"
@@ -73,6 +83,7 @@ export const Navbar = () => {
                <NavLink
                   className="link women"
                   style={{
+                     // border: '1px solid red',
                      marginLeft: "3%",
                      marginBottom: "-2%",
                      fontWeight: "bold",
@@ -82,7 +93,11 @@ export const Navbar = () => {
                      paddingBottom: "10px",
                      paddingLeft: "5px",
                      paddingRight: "5px",
-                     whiteSpace: "nowrap"
+
+                     whiteSpace: "nowrap",
+
+                     wordWrap: 'normal',
+
                   }}
                   to="/women"
                >
@@ -95,6 +110,7 @@ export const Navbar = () => {
                <Link
                   className="link kids"
                   style={{
+                     // border: '1px solid red',
                      marginLeft: "3%",
                      fontWeight: "bold",
                      fontSize: "14px",
@@ -104,7 +120,8 @@ export const Navbar = () => {
                      paddingLeft: "5px",
                      paddingRight: "5px",
                      marginBottom: "-2%",
-                     whiteSpace: "nowrap"
+                     whiteSpace: "nowrap",
+                     wordWrap: 'normal',
                   }}
                   to="/kids"
                >
@@ -119,6 +136,7 @@ export const Navbar = () => {
                <Link
                   className="link home"
                   style={{
+                     // border: '1px solid red',
                      //   marginLeft: "3%",
                      fontWeight: "bold",
                      fontSize: "14px",
@@ -128,7 +146,8 @@ export const Navbar = () => {
                      paddingLeft: "5px",
                      paddingRight: "5px",
                      marginBottom: "-2%",
-                     whiteSpace: "nowrap"
+                     whiteSpace: "nowrap",
+                     // wordWrap: 'normal',
                   }}
                   to="/home&living"
                >
@@ -141,6 +160,7 @@ export const Navbar = () => {
                <Link
                   className="link beauty"
                   style={{
+                     // border: '1px solid red',
                      marginLeft: "3%",
                      fontWeight: "bold",
                      fontSize: "14px",
@@ -150,7 +170,8 @@ export const Navbar = () => {
                      paddingLeft: "5px",
                      paddingRight: "5px",
                      marginBottom: "-2%",
-                     whiteSpace: "nowrap"
+                     whiteSpace: "nowrap",
+                     wordWrap: 'normal',
                   }}
                   to="/Beauty"
                >
@@ -163,6 +184,7 @@ export const Navbar = () => {
                <Link
                   className="link studio"
                   style={{
+                     // border: '1px solid red',
                      marginLeft: "3%",
                      fontWeight: "bold",
                      fontSize: "14px",
@@ -172,7 +194,10 @@ export const Navbar = () => {
                      paddingLeft: "5px",
                      paddingRight: "5px",
                      marginBottom: "-2%",
-                     whiteSpace: "nowrap"
+
+                     whiteSpace: "nowrap",
+
+                     wordWrap: 'normal',
                   }}
                   to="/Studio"
                >
@@ -184,12 +209,20 @@ export const Navbar = () => {
             {/* <p className="nw">NEW</p> */}
 
             <div className="inp1">
-               <input
+               <input 
+               style={{ 
+                     // border: '1px solid red',
+                     wordWrap: 'normal', 
+                     marginLeft: "15%", 
+                     fontSize: "12px", 
+                     width: "480px" 
+                     }}
                   type="text"
                   className="inp"
                   placeholder="Search for products, brands and more"
                />
             </div>
+
 
             <div style={{display:"flex", justifyContent:"space-evenly", width:"20%", marginTop:"10px"}}>
                <p style={{ marginLeft: "4%", cursor: "pointer" }}>
@@ -201,9 +234,20 @@ export const Navbar = () => {
                   <br></br>
                   <span >
                      {/* {" "}
+            <p style={{ marginLeft: "4%", cursor: "pointer" }}>
+               <img
+                  style={{ 
+                     // border: '1px solid red',
+                     wordWrap: 'normal', 
+                     marginLeft: "15%", fontSize: "12px", width: "20px" }}
+                  src="https://cdn-icons-png.flaticon.com/512/3106/3106773.png"
+                  alt=""
+               />
+               {/* <br></br> */}
+                  {/* {" "}
                   {currentUser ? (
                      <Link onClick={logout} to={"/"} className="rightLink" >
-                      Logout
+                        Logout
                      </Link>
                   ) : ( */}
                      <Link to={"/login"} className="rightLink">Profile</Link>
@@ -224,6 +268,8 @@ export const Navbar = () => {
 
                {/* <Link
                style={{
+                     // border: '1px solid red',
+                     wordWrap: 'normal',
                   marginLeft: "2%",
                   fontSize: "15px",
                   textDecoration: "none",
@@ -234,12 +280,18 @@ export const Navbar = () => {
                to={"/bag"}
             > */}
                {" "}
-               <p style={{ marginLeft: "2%", cursor: "pointer", gap:"0px" }}>
+               {/* <p style={{ marginLeft: "2%", cursor: "pointer", gap:"0px" }}> */}
+
+               <p style={{ 
+                     // border: '1px solid red', 
+                     wordWrap: 'normal',
+                     marginLeft: "2%", cursor: "pointer" }}>
                   <img
                      style={{ marginLeft: "15%", fontSize: "12px", width: "20px",marginBottom:"5px" }}
                      src="https://cdn-icons-png.flaticon.com/512/1174/1174408.png"
                      alt=""
                   />
+                  
                   
                   <span>
                      <Link style={{
@@ -250,7 +302,8 @@ export const Navbar = () => {
                         whiteSpace: "nowrap",
                      }} to={"/bag"} className="rightLink">Bag</Link>
                   </span>
-                  {/* <span className="rightLink">Bag</span> */}
+               
+
                </p>
                {/* </Link> */}
             </div>
