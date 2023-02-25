@@ -19,12 +19,6 @@ import AdminProfilePage from "../Admin/AdminProfilePage";
 // import Cart from "../Pages/Cart";
 // import Payment from "../Pages/Payment";
 // import Success from "../Pages/Success";
-import { PrivateRoute } from "./PrivateRouting";
-import Details from "../Pages/mensPage/Details";
-import HomePage from "../Pages/mensPage/HomePage";
-import Cards from "./mensPage/Product/Cards";
-import ProductItem from "./mensPage/Product/ProductItem";
-// import { Navbar } from '../Components/Navbar/Navbar';
 
 const AllRoutes = () => {
   // console.log(userName);
@@ -34,11 +28,6 @@ const AllRoutes = () => {
       <Routes>
         {/* <Route path="/" element={<Navbar />}></Route> */}
         <Route path="/" element={<Home />}></Route>
-        <Route path="/HomePage" element={<HomePage/>}></Route>
-        <Route path="/details" element={ <Details/>  }></Route>
-        {/* <Route path="/product" element={<Product />}></Route> */}
-        
-        {/* <Route path="/Cards" element={<Cards />}></Route> */}
         {/* <Route path="/product/:id" element={<SingleProductPage />}></Route> */}
         <Route
           path="/wishlist"
@@ -49,8 +38,7 @@ const AllRoutes = () => {
           // }
         ></Route>
         <Route
-          path="/cart"
-          element={<PrivateRoute>{/* <Cart /> */}</PrivateRoute>}
+          // path="/cart" element={ <Cart />}
         ></Route>
         <Route path="*" element={<PageNotFound />}></Route>
         {/* <Route path="/login" element={<Login />}></Route> */}
@@ -64,15 +52,15 @@ const AllRoutes = () => {
         <Route path="/admin-profile" element={<AdminProfilePage />}></Route>
         <Route
           path="/address"
-          element={<PrivateRoute>{/* <Address /> */}</PrivateRoute>}
+          element={{/* <Address /> */}}
         ></Route>
         <Route
           path="/payment"
-          element={<PrivateRoute>{/* <Payment /> */}</PrivateRoute>}
+          element={{/* <Payment /> */}}
         ></Route>
         <Route
           path="/success"
-          element={<PrivateRoute>{/* <Success /> */}</PrivateRoute>}
+          element={{/* <Success /> */}}
         ></Route>
       </Routes>
     </div>
