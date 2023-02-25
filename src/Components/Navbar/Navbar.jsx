@@ -13,6 +13,7 @@ import { StudioNav } from './Studio'
 const Div = styled.nav`
    position: fixed;
    display: flex;
+   justify-content: center;
    padding: 5px 10px;
    width: 100%;
    /* height: 70px; */
@@ -38,10 +39,10 @@ export const Navbar = () => {
                   style={{
                      width: "75%",
                      height: "50px",
-                     marginLeft: "30%",
+                     marginLeft: "15%",
                      // marginRight: "30%",
                   }}
-                  src="logoV.jpeg"
+                  src="VastraLogo.png"
                   alt=""
                />
             </Link>
@@ -58,6 +59,7 @@ export const Navbar = () => {
                      paddingBottom: "10px",
                      paddingLeft: "20px",
                      paddingRight: "5px",
+                     whiteSpace: "nowrap",
                      //   hoverBorderBottom:"5px solid #ee5f73"
                   }}
                   to="/men"
@@ -80,6 +82,7 @@ export const Navbar = () => {
                      paddingBottom: "10px",
                      paddingLeft: "5px",
                      paddingRight: "5px",
+                     whiteSpace: "nowrap"
                   }}
                   to="/women"
                >
@@ -101,6 +104,7 @@ export const Navbar = () => {
                      paddingLeft: "5px",
                      paddingRight: "5px",
                      marginBottom: "-2%",
+                     whiteSpace: "nowrap"
                   }}
                   to="/kids"
                >
@@ -124,6 +128,7 @@ export const Navbar = () => {
                      paddingLeft: "5px",
                      paddingRight: "5px",
                      marginBottom: "-2%",
+                     whiteSpace: "nowrap"
                   }}
                   to="/home&living"
                >
@@ -145,6 +150,7 @@ export const Navbar = () => {
                      paddingLeft: "5px",
                      paddingRight: "5px",
                      marginBottom: "-2%",
+                     whiteSpace: "nowrap"
                   }}
                   to="/Beauty"
                >
@@ -166,6 +172,7 @@ export const Navbar = () => {
                      paddingLeft: "5px",
                      paddingRight: "5px",
                      marginBottom: "-2%",
+                     whiteSpace: "nowrap"
                   }}
                   to="/Studio"
                >
@@ -184,58 +191,69 @@ export const Navbar = () => {
                />
             </div>
 
-            <p style={{ marginLeft: "4%", cursor: "pointer" }}>
-               <img
-                  style={{ marginLeft: "15%", fontSize: "12px", width: "20px" }}
-                  src="https://cdn-icons-png.flaticon.com/512/3106/3106773.png"
-                  alt=""
-               />
-               <br></br>
-               <span >
-                  {/* {" "}
+            <div style={{display:"flex", justifyContent:"space-evenly", width:"20%", marginTop:"10px"}}>
+               <p style={{ marginLeft: "4%", cursor: "pointer" }}>
+                  <img
+                     style={{  fontSize: "12px", width: "20px", display: "inline" }}
+                     src="https://cdn-icons-png.flaticon.com/512/3106/3106773.png"
+                     alt=""
+                  />
+                  <br></br>
+                  <span >
+                     {/* {" "}
                   {currentUser ? (
                      <Link onClick={logout} to={"/"} className="rightLink" >
                       Logout
                      </Link>
                   ) : ( */}
-                  <Link to={"/login"} className="rightLink">Profile</Link>
-                  {/* )} */}
-               </span>
-            </p>
+                     <Link to={"/login"} className="rightLink">Profile</Link>
+                     {/* )} */}
+                  </span>
+               </p>
 
-            <p style={{ marginLeft: "2%", cursor: "pointer" }}>
-               <img
-                  style={{ marginLeft: "15%", fontSize: "12px", width: "20px" }}
-                  src="https://cdn-icons-png.flaticon.com/512/7299/7299761.png"
-                  alt=""
-               />
-               <br></br>
-               <span>
-                  <Link to={"/wishlist"} className="rightLink">Wishlist</Link>
-               </span>
-            </p>
+               <p style={{ marginLeft: "2%", cursor: "pointer" }}>
+                  <img
+                     style={{ marginLeft: "15%", fontSize: "12px", width: "20px", display: "inline" }}
+                     src="https://cdn-icons-png.flaticon.com/512/7299/7299761.png"
+                     alt=""
+                  />
+                  <span>
+                     <Link to={"/wishlist"} className="rightLink">Wishlist</Link>
+                  </span>
+               </p>
 
-            <Link
+               {/* <Link
                style={{
                   marginLeft: "2%",
                   fontSize: "15px",
                   textDecoration: "none",
                   color: "#282C3F",
+                  whiteSpace: "nowrap"
                }}
                // to="/cart"
-               to="/bag"
-            >
+               to={"/bag"}
+            > */}
                {" "}
-               <p style={{ marginLeft: "2%", cursor: "pointer" }}>
+               <p style={{ marginLeft: "2%", cursor: "pointer", gap:"0px" }}>
                   <img
-                     style={{ marginLeft: "15%", fontSize: "12px", width: "20px" }}
+                     style={{ marginLeft: "15%", fontSize: "12px", width: "20px",marginBottom:"5px" }}
                      src="https://cdn-icons-png.flaticon.com/512/1174/1174408.png"
                      alt=""
                   />
-                  <br></br>
-                  <span className="rightLink">Bag</span>
+                  
+                  <span>
+                     <Link style={{
+                        marginLeft: "2%",
+                        fontSize: "12px",
+                        textDecoration: "none",
+                        color: "#282C3F",
+                        whiteSpace: "nowrap",
+                     }} to={"/bag"} className="rightLink">Bag</Link>
+                  </span>
+                  {/* <span className="rightLink">Bag</span> */}
                </p>
-            </Link>
+               {/* </Link> */}
+            </div>
          </Div>
       </>
    );
