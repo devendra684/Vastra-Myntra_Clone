@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
 import AllRoutes from './Components/AllRoutes';
+import { FullDetails } from './Pages/FullDetails';
 import { LoginOrSignUp } from './Pages/LoginOrSignUp';
+import {Otp} from './Pages/Otp';
 // import { Navbar } from './Components/Navbar/Navbar';
 //import { auth } from './Components/firebase';
 //import Navbar from './Components/Navbar';
@@ -24,7 +26,11 @@ function App() {
   return (
     <div className="App">
       <LoginOrSignUp/>   
+      <FullDetails/>
+
+      <Otp />
       {/* for just checking Not for pushing. */}
+
       {/* <AllRoutes /> */}
       {/* <Navbar/> */}
       {/* <Home/> */}
