@@ -6623,7 +6623,7 @@
             "name": "Devendra Singh",
             "email": "dev@gmail.com",
             "password": "dev12345",
-            "contact": "1234567800",
+            "contact": "9999888822",
             "isAuth":true,
             "logindetails": {
                 "createdAt": "",
@@ -6634,11 +6634,11 @@
             "image": ""
         },
         {
-            "id":1,
+            "id":2,
             "name": "Prince Sharma",
             "email": "ps@gmail.com",
             "password": "ps12345",
-            "contact": "1234567800",
+            "contact": "8888777733",
             "isAuth":true,
             "logindetails": {
                 "createdAt": "",
@@ -6649,11 +6649,11 @@
             "image": ""
         },
         {
-            "id":1,
+            "id":3,
             "name": "Ravi",
             "email": "Ravi@gmail.com",
             "password": "Ravi12345",
-            "contact": "1234567800",
+            "contact": "6666555544",
             "isAuth":true,
             "logindetails": {
                 "createdAt": "",
@@ -6664,7 +6664,7 @@
             "image": ""
         },
         {
-            "id":1,
+            "id":4,
             "name": "Ruchi",
             "email": "Ruchi@gmail.com",
             "password": "Ruchi12345",
