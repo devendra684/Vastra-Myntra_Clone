@@ -9,7 +9,7 @@
   /* margin: 70px 0px; */
   margin-bottom: 0px;
 }
-.GifImg{
+.GifImg {
   width: 60%;
   height: 80px;
   justify-content: center;
@@ -22,9 +22,9 @@
   margin: 40px 0px;
   /* border: 1px solid rgb(20, 20, 19);  */
   display: grid;
-  grid-template-columns: repeat(8, 1fr); 
+  grid-template-columns: repeat(8, 1fr);
 }
-.HoliDeals{
+.HoliDeals {
   margin: 20px 0px;
   /* border: 1px solid red; */
   display: grid;
@@ -60,13 +60,18 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
-.imgh1{
-    text-align: left;
-    margin: 70px;
-    text-transform: uppercase;
+.imgh1 {
+  text-align: left;
+  margin: 70px;
+  text-transform: uppercase;
 }
 
 .image_size {
   width: 100%;
   height: auto;
+}
+
+
+.hover :hover {
+  cursor: pointer;
 }
