@@ -35,16 +35,16 @@ function Payment() {
   const { checkoutData } = useSelector((store) => store.checkout);
   const dispatch = useDispatch();
 
-  useEffect(()=>{
+  useEffect(() => {
     dispatch(fetchCartData());
     dispatch(getCheckoutData());
-  },[])
-  console.log("Cr",cartData);
-  console.log("C",checkoutData);
+  }, [])
+  console.log("Cr", cartData);
+  console.log("C", checkoutData);
   const TotalMRP = localStorage.getItem("Total MRP");
   const DiscountPrice = localStorage.getItem("DiscountPrice");
 
-  const captcha = 1309;
+  const captcha = 3535;
   const { cardno, cardName, month, cvv } = value;
 
   const activeStyle = {
@@ -69,49 +69,46 @@ function Payment() {
     setToggle(!toggle);
   };
   const handleSubmit = () => {
-    for(let i=0;i<cartData.length;i++){
-      for(let j=0;j<checkoutData.length;j++){
-        if(cartData[i].id===checkoutData[j].id){
-          dispatch(deleteCartData(cartData[i].id)).then(()=>dispatch(fetchCartData()));
-          dispatch(deleteCheckoutData(checkoutData[j].id)).then(()=>dispatch(getCheckoutData()));
-          console.log("CD",cartData);
+    for (let i = 0; i < cartData.length; i++) {
+      for (let j = 0; j < checkoutData.length; j++) {
+        if (cartData[i].id === checkoutData[j].id) {
+          dispatch(deleteCartData(cartData[i].id)).then(() => dispatch(fetchCartData()));
+          dispatch(deleteCheckoutData(checkoutData[j].id)).then(() => dispatch(getCheckoutData()));
+          console.log("CD", cartData);
         }
       }
-     }
-     
+    }
+
     if (code !== captcha || code === "") {
       toast.error("Please fill the capture first", {
         position: "top-center",
       });
-   
-      
+
       return;
     }
     navigate("/success");
   };
   const handleSubmitCard = () => {
-    for(let i=0;i<cartData.length;i++){
-      for(let j=0;j<checkoutData.length;j++){
-        if(cartData[i].id===checkoutData[j].id){
-          dispatch(deleteCartData(cartData[i].id)).then(()=>dispatch(fetchCartData()));
-          dispatch(deleteCheckoutData(checkoutData[j].id)).then(()=>dispatch(getCheckoutData()));
-         console.log("CD",cartData);
+    for (let i = 0; i < cartData.length; i++) {
+      for (let j = 0; j < checkoutData.length; j++) {
+        if (cartData[i].id === checkoutData[j].id) {
+          dispatch(deleteCartData(cartData[i].id)).then(() => dispatch(fetchCartData()));
+          dispatch(deleteCheckoutData(checkoutData[j].id)).then(() => dispatch(getCheckoutData()));
+          console.log("CD", cartData);
         }
       }
-     }
-     if (!cardName || !cardno || !month || !cvv) {
+    }
+    if (!cardName || !cardno || !month || !cvv) {
       toast.error("Please fill the field first", {
         position: "top-center",
       });
-      
-    
       return;
     }
     navigate("/success");
   };
   return (
     <>
-    {/* <Navbar /> */}
+      {/* <Navbar /> */}
       <PaymentNavbar />
       <Flex
         minH={"100vh"}
@@ -193,7 +190,7 @@ function Payment() {
                         PhonePe/Google
                       </Box>
                       <Box mt={2} style={defaultStyle} p={2}>
-                        Paytm/Wallets
+                        Pay-tm/Wallets
                       </Box>
                       <Box mt={2} style={defaultStyle} p={2}>
                         Net Banking
@@ -219,7 +216,7 @@ function Payment() {
                         PhonePe/Google
                       </Box>
                       <Box mt={2} style={defaultStyle} p={2}>
-                        Paytm/Wallets
+                        Pay-tm/Wallets
                       </Box>
                       <Box mt={2} style={defaultStyle} p={2}>
                         Net Banking
@@ -234,7 +231,7 @@ function Payment() {
                       <Stack border={"0px solid"} textAlign="left" spacing={4}>
                         <FormControl>
                           <Stack spacing={4}>
-                            <Text marginbottom={"30px"} fontWeight={"700"}>
+                            <Text marginBottom={"30px"} fontWeight={"700"}>
                               Pay On Delivery (Cash/UPI)
                             </Text>
                             <Box
@@ -264,7 +261,7 @@ function Payment() {
                               background={"#ff3f6c"}
                               color="#fff"
                               _hover={{
-                                backgrounColor: "#fff36c",
+                                backgroundColor: "#fff36c",
                               }}
                               onClick={handleSubmit}
                             >
@@ -343,7 +340,7 @@ function Payment() {
                             color="#fff"
                             w="full"
                             _hover={{
-                              backgrounColor: "#fff36c",
+                              backgroundColor: "#fff36c",
                             }}
                             onClick={handleSubmitCard}
                           >
@@ -417,7 +414,7 @@ function Payment() {
           >
             <Stack p={4}>
               <FormLabel fontSize={"12px"} fontFamily={"1000"}>
-                PRICE DEATILS (items)
+                PRICE DETAILS (items)
               </FormLabel>
               <HStack justifyContent={"space-between"}>
                 <Text fontSize={"14px"}>Total MRP</Text>

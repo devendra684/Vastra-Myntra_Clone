@@ -50,12 +50,12 @@ export const HomeLivingNav=()=>{
         </div>
         <div className="a1 h">
         <ul>
-        <li>Home Décor</li>
+        <li>Home Decor</li>
         <li>Plants & Planters</li>
         <li>Aromas & Candles</li>
         <li>Clocks</li>
         <li>Mirrors</li>
-        <li>Wall Décor</li>
+        <li>Wall Decor</li>
         <li>Wall Shelves</li>
         <li>Fountains</li>
         <li>Showpieces & Vases</li>

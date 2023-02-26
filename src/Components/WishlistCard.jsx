@@ -20,7 +20,7 @@ useEffect(()=>{
   const addToBag = async () => {
     // console.log("newItem:",props)
     await axios
-      .post(`https://classic-world.onrender.com/cart/`, prod)
+      .post(`https://vastra.onrender.com/cart/`, prod)
       .then((res) => {
         alert("Added to bag Successfully....");
         dispatch(fetchCartData()) 
@@ -29,8 +29,6 @@ useEffect(()=>{
       .catch((err) => alert("Already Exists in Your Bag"));
   };
 
-  
-  
   const removeFromWishlist=()=>{
     dispatch(removeProdData(id))
 }
@@ -39,7 +37,7 @@ useEffect(()=>{
     
     <Box boxShadow={"rgba(0, 0, 0, 0.16) 0px 1px 4px"} m={"1rem"} position="relative">
       <Stack spacing={"0.5rem"}>
-        tilte
+        Tilte
         <Image src={images} />
         <Text>{brand}</Text>
         <Flex

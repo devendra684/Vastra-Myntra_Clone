@@ -138,5 +138,3 @@ export const deleteUsersListdataAPI=async(id)=>{
     let res = await axios.delete(`https://vastra.onrender.com/UsersList/${id}`);
     return res.data;
     }       
-
-    

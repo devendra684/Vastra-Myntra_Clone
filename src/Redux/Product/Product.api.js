@@ -5,6 +5,7 @@ export const getMensProductsAPI = async (page) => {
     // console.log(res.data)
     return res
 }
+
 export const getSingleProductAPI = async (id) => {
     let res = await axios.get(`https://vastra.onrender.com/MensData/${id}`)
     return res
@@ -36,9 +37,9 @@ export const getProductsSorting = async (val, page) => {
 }
 
 // filter 
-export const getFilterByBrand = async(val,page)=>{
-val = (val.toString())
-// console.log(val)
+export const getFilterByBrand = async (val, page) => {
+    val = (val.toString())
+    // console.log(val)
     let res = await axios.get(`https://vastra.onrender.com/MensData?_limit=12&_page=${page}&brand=${val}`)
 
     return res
@@ -47,12 +48,12 @@ val = (val.toString())
 
 // --Women--Section--
 export const getWomensProductsAPI = async (page) => {
-    let res = await axios.get(`https://classic-world.onrender.com/WomensData?_limit=12&_page=${page}`)
+    let res = await axios.get(`https://vastra.onrender.com/WomensData?_limit=12&_page=${page}`)
     // console.log(res.data)
     return res
 }
 export const getWomensSingleProductAPI = async (id) => {
-    let res = await axios.get(`https://classic-world.onrender.com/WomensData/${id}`)
+    let res = await axios.get(`https://vastra.onrender.com/WomensData/${id}`)
     return res
 }
 
@@ -82,16 +83,14 @@ export const getWomensProductsSorting = async (val, page) => {
 }
 
 // filter 
-export const getWomensFilterByBrand = async(val,page)=>{
-val = (val.toString())
-// console.log(val)
+export const getWomensFilterByBrand = async (val, page) => {
+    val = (val.toString())
+    // console.log(val)
     let res = await axios.get(`https://vastra.onrender.com/WomensData?_limit=12&_page=${page}&brand=${val}`)
 
     return res
     // console.log(res.data)
 }
-
-
 
 // --Kids--Section--
 export const getKidsProductsAPI = async (page) => {
@@ -130,9 +129,9 @@ export const getKidsProductsSorting = async (val, page) => {
 }
 
 // filter 
-export const getKidsFilterByBrand = async(val,page)=>{
-val = (val.toString())
-// console.log(val)
+export const getKidsFilterByBrand = async (val, page) => {
+    val = (val.toString())
+    // console.log(val)
     let res = await axios.get(`https://vastra.onrender.com/ChildData?_limit=12&_page=${page}&brand=${val}`)
 
     return res

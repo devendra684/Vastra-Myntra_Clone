@@ -65,7 +65,7 @@ export default function EditPassword({
       isPreviewFocusable={false}
     >
       <EditablePreview />
-      {/* Here is the custom input */}
+      {/* Here is the Custom input */}
       <HStack>
         <Input
           

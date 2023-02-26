@@ -1,13 +1,14 @@
-import { getFilterByBrand, 
-      getMensProductsAPI, 
-      getProductsSorting, 
-      getWomensFilterByBrand, 
-      getWomensProductsAPI, 
-      getWomensProductsSorting,
-      getKidsFilterByBrand, 
-      getKidsProductsAPI, 
-      getKidsProductsSorting
-   } from "./Product.api"
+import {
+   getFilterByBrand,
+   getMensProductsAPI,
+   getProductsSorting,
+   getWomensFilterByBrand,
+   getWomensProductsAPI,
+   getWomensProductsSorting,
+   getKidsFilterByBrand,
+   getKidsProductsAPI,
+   getKidsProductsSorting
+} from "./Product.api"
 import * as types from "./Product.type"
 
 export const getMensProducts = (page) => async (dispatch) => {
@@ -228,10 +229,8 @@ export const getKidsProductsSorted = (val, page) => async (dispatch) => {
 export const getKidsFilteredByBrand = (val, page) => async (dispatch) => {
    // console.log("Val:",val)
    dispatch({ type: types.GET_PRODUCTS_LOADING })
-
    try {
       let data = await getKidsFilterByBrand(val, page)
-
       //   console.log("data:", data )
       dispatch({
          type: types.GET_PRODUCTS_SUCCESS,

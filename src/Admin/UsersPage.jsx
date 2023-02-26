@@ -31,7 +31,6 @@ const UsersPage = () => {
     }
   }
   
-  
   return (
     <Box minH="100vh" bg={'gray.100'} fontFamily={'sans-serif'}>
       <AdminNavbar/>
@@ -56,28 +55,24 @@ const UsersPage = () => {
           height={450}
           series={[loginUsers,logoutUsers]}
           options={{
-          noData: { text: "Unavailable" },
-          stroke: {
-            lineCap: "round"
-          },
-        colors: ['#2BA751', '#FF0000'],
-  
-    labels: ["Total Login Users", "Total Logout Users"],
-    
-  }}
-  >
-
+            noData: { text: "Unavailable" },
+            stroke: {
+              lineCap: "round"
+            },
+            colors: ['#2BA751', '#FF0000'],
+            labels: ["Total Login Users", "Total Logout Users"],
+          }}
+          >
   </Chart>
     </Stack>
     </HStack>
     </Stack>
-    <Stack ml={'440px'} spacing={10} >
-      {UsersListData.length!==0 && UsersListData.map((el,i)=>(
-        <UserCard key={i} {...el} deleteUsers={deleteUsers} />
-      ))}
-    </Stack>
+        <Stack ml={'440px'} spacing={10} >
+          {UsersListData.length !== 0 && UsersListData.map((el, i) => (
+            <UserCard key={i} {...el} deleteUsers={deleteUsers} />
+          ))}
+        </Stack>
     </Box>
-    
     </Box>
   )
 }

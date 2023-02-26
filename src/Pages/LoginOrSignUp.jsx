@@ -2,7 +2,7 @@ import { Button } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
-import "../css/LoginOrSignUp.css";
+import "../Styles/LoginOrSignUp.css";
 import { getData } from "./storage";
 // import "../css/Home.css";
 
@@ -21,7 +21,7 @@ export const LoginOrSignUp = () => {
   const handleSubmit = () => {
     setButtonLogging(true);
     setTimeout(() => {
-      console.log("hua kuchh");
+      console.log("submitted");
       setButtonLogging(false);
       navigate("/fullDetails");
     }, 1000);

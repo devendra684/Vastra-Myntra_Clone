@@ -358,11 +358,9 @@ const WomensProduct = () => {
                                 totalPages={totalPages}
                             />
                         </Box>
-                        {/* <Footer/> */}
                     </Box>
                 </Flex>
-
-                {/* </div> */}
+                
             </Box>
             <Footer />
         </div>

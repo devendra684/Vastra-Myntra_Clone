@@ -6,7 +6,6 @@ import {
   HStack,
   Button,
 } from "@chakra-ui/react";
-import AdminProfile from "../Assets/AdminProfile.jpg";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import AdminNavbar from "./AdminNavbar";
@@ -71,7 +70,7 @@ const AdminProfilePage = () => {
                 height={"200px"}
                 borderRadius={"50%"}
                 name="DS "
-                src={AdminProfile}
+                src={'/AdminProfile.jpg'}
                 alt={adminData.name}
                 ring={5}
                 ringColor={"#898AAB"}

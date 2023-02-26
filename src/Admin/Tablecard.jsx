@@ -1,5 +1,6 @@
 import { Button, Td, Tr, Image } from "@chakra-ui/react";
 import { EditIcon, DeleteIcon } from "@chakra-ui/icons";
+
 const Tablecard = ({
   id,
   ind,

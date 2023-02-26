@@ -10,11 +10,10 @@ import Navbar from '../Components/Navbar/Navbar'
 import Footer from '../Components/Footer/Footer'
 
 const Wishlist = () => {
-
     const {loading , error ,wishlistData} =useSelector(store=>store.wishlist)
     const dispatch = useDispatch()
 //console.log("wishlist:", wishlistData)
- 
+
 useEffect(()=>{
     dispatch(fetchWishlistData())
 },[dispatch])

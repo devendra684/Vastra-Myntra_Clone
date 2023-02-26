@@ -75,7 +75,6 @@ const KidsProduct = () => {
     const handlePage = (val) => {
         setCurrentPage((prev) => prev + val);
     };
-    // pagination ends here
 
     // sorting filter start
     useEffect(() => {
@@ -86,7 +85,6 @@ const KidsProduct = () => {
     const handleChange = (e) => {
         setSValue(e.target.value);
     };
-    // sorting filter ends here
 
     /*brand filter starts here */
     useEffect(() => {
@@ -103,15 +101,11 @@ const KidsProduct = () => {
         }
     };
     //console.log("isChecked", checked);
-    /*brand filter ends here */
 
     /* handleClear starts here*/
-
     const handleClear = useCallback(() => {
         dispatch(getKidsProducts(currentPage));
     }, [dispatch, currentPage]);
-
-    /* handleClear ends here*/
 
     if (loading)
         return (
@@ -362,10 +356,8 @@ const KidsProduct = () => {
                                 totalPages={totalPages}
                             />
                         </Box>
-                        {/* <Footer/> */}
                     </Box>
                 </Flex>
-
                 {/* </div> */}
             </Box>
             <Footer />

@@ -30,8 +30,8 @@ const KidsPage = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [price, setPrice] = useState('');
   const [StrikePrice, setStrikePrice] = useState('');
-  const [discount, setDiscount]=useState('');
-  const [id,setId]=useState('');
+  const [discount, setDiscount] = useState('');
+  const [id, setId] = useState('');
   const KidsData = useSelector((store) => store.adminManager.kidsData);
   const dispatch = useDispatch();
 
@@ -42,18 +42,18 @@ const KidsPage = () => {
   const handleDelete = (id) => {
     dispatch(deleteKidsData(id)).then(() => dispatch(getKidsData()));
   };
-  
-  const handleUpdate=()=> {
-    dispatch(updateKidsData(id, price, discount, StrikePrice)).then(()=>{
-        dispatch(getKidsData());
-        onClose();
+
+  const handleUpdate = () => {
+    dispatch(updateKidsData(id, price, discount, StrikePrice)).then(() => {
+      dispatch(getKidsData());
+      onClose();
     })
 
   };
-const handleOpen=(id)=>{
-  setId(id)
-  onOpen();
-}
+  const handleOpen = (id) => {
+    setId(id)
+    onOpen();
+  }
 
   return (
     <Box bg={"gray.100"} width={"100%"}>
@@ -63,7 +63,7 @@ const handleOpen=(id)=>{
           <Table variant="striped" colorScheme="pink">
             <Thead bg={"#990578"}>
               <Tr>
-                <Th color={"white"}>So No.</Th>
+                <Th color={"white"}>Sr No.</Th>
                 <Th
                   color={"white"}
                   display={{ base: "block", md: "block", sm: "none" }}
@@ -113,7 +113,7 @@ const handleOpen=(id)=>{
               </FormControl>
 
               <FormControl mt={4}>
-                <FormLabel>Dicscount Price </FormLabel>
+                <FormLabel>Discount Price </FormLabel>
                 <Input
                   placeholder="Discount"
                   type={"number"}
@@ -138,9 +138,9 @@ const handleOpen=(id)=>{
                 Save
               </Button>
               <Button onClick={onClose}>Cancel</Button>
-          </ModalFooter>
-      </ModalContent>
-   </Modal>
+            </ModalFooter>
+          </ModalContent>
+        </Modal>
       </Box>
     </Box>
   );

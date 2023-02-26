@@ -7,7 +7,6 @@ let initialState={
     products:[],
     mainData:[],
     filteredBrandData:[]
-    
 }
 
 export const mensProductReducer = (state =initialState , {type , payload})=>{

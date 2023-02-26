@@ -11,12 +11,12 @@ server.listen(PORT, () =>
   console.log(`JSON Server is running on port ${PORT}`)
 );
 
-//https://classic-world.onrender.com/MensData
-//https://classic-world.onrender.com/WomensData
-//https://classic-world.onrender.com/ChildrensData
-//https://classic-world.onrender.com/WishList
-//https://classic-world.onrender.com/Cart
-//https://classic-world.onrender.com/UsersList
-//https://classic-world.onrender.com/AdminData
-//https://classic-world.onrender.com/Checkout
-//https://classic-world.onrender.com/CurrentUser
+//https://vastra.onrender.com/MensData
+//https://vastra.onrender.com/WomensData
+//https://vastra.onrender.com/ChildrensData
+//https://vastra.onrender.com/WishList
+//https://vastra.onrender.com/Cart
+//https://vastra.onrender.com/UsersList
+//https://vastra.onrender.com/AdminData
+//https://vastra.onrender.com/Checkout
+//https://vastra.onrender.com/CurrentUser

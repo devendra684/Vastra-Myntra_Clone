@@ -1,10 +1,10 @@
-import { Button, FormControl, FormLabel, Input } from "@chakra-ui/react";
+import { Button, FormControl, FormLabel} from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 import { getData, saveData } from "./storage";
-import "../css/LoginOrSignUp.css";
+import "../Styles/LoginOrSignUp.css";
 
 export const SeeFullDetails = () => {
   const [fulldetails, setFullDetails] = useState({});
@@ -50,7 +50,7 @@ export const SeeFullDetails = () => {
           </div>
 
           <div className="form">
-            <h1 className="formh1">Hii Mr/Mrs :{fulldetails.name}</h1>
+            <h1 className="formh1">Hi, Mr/Mrs :{fulldetails.name}</h1>
             <div>
               <FormControl>
                 <FormLabel style={{ fontSize: "20px" }}>

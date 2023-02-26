@@ -9,20 +9,17 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-
 import React from "react";
 
 
-const CartComponent = ({ cart, handleCheckData, handleChangeQty,removeFromCart }) => {
-
-
+const CartComponent = ({ cart, handleCheckData, handleChangeQty, removeFromCart }) => {
 
   return (
     <Box>
-      <Box mb={5}  border={'1px solid #B2B3C8'} borderRadius={5} >
-        <Flex direction={{base:'column',sm:'column',md:'row',lg:'row'}} >
-        <Stack w={"100%"} ml={2}display={{base:'flex',sm:'flex',md:'none',lg:'none'}} 
-        spacing={3} margin={"auto"} mb={6} boxShadow={'md'} borderRadius={5} p={3} >          <Box
+      <Box mb={5} border={'1px solid #B2B3C8'} borderRadius={5} >
+        <Flex direction={{ base: 'column', sm: 'column', md: 'row', lg: 'row' }} >
+          <Stack w={"100%"} ml={2} display={{ base: 'flex', sm: 'flex', md: 'none', lg: 'none' }}
+            spacing={3} margin={"auto"} mb={6} boxShadow={'md'} borderRadius={5} p={3} >          <Box
               pl={"0.5rem"}
               textAlign={"left"}
               width={{ sm: "100%", md: "100%", lg: "100%" }}
@@ -30,16 +27,16 @@ const CartComponent = ({ cart, handleCheckData, handleChangeQty,removeFromCart }
               <HStack justifyContent={'space-between'} ><Text fontSize={{ md: "0.8rem" }} fontWeight={"700"}>
                 {cart.title}
               </Text> <Box position={"relative"}>
-        <CloseIcon position={"absolute"} top={0} right={3} onClick={()=>removeFromCart(cart.id)}/>
-      </Box></HStack>
-              
+                  <CloseIcon position={"absolute"} top={0} right={3} onClick={() => removeFromCart(cart.id)} />
+                </Box></HStack>
+
               <Text fontSize={{ md: "0.8rem" }} mb={2} >
                 <Text display={"inline-block"} color={"gray.400"} mr={2} >
                   Sold by:
                 </Text>
                 {cart.brand}
               </Text>
-              <Box  mb={2} >
+              <Box mb={2} >
                 <Flex alignItems={"center"} gap={"1rem"}>
                   <Text
                     fontSize={{ sm: "0.8rem", md: "1rem" }}
@@ -100,10 +97,10 @@ const CartComponent = ({ cart, handleCheckData, handleChangeQty,removeFromCart }
               isChecked={cart.isChecked}
               backgroundColor={"blackAlpha.300"}
               position={"absolute"}
-              onChange={() => handleCheckData(cart.id,cart)}
+              onChange={() => handleCheckData(cart.id, cart)}
             ></Checkbox>
           </Box>
-          <Stack w={"100%"} ml={2} spacing={3} display={{base:'none',sm:'none',md:'flex',lg:'flex'}}  >
+          <Stack w={"100%"} ml={2} spacing={3} display={{ base: 'none', sm: 'none', md: 'flex', lg: 'flex' }}  >
             <Box
               pl={"0.5rem"}
               textAlign={"left"}
@@ -112,9 +109,9 @@ const CartComponent = ({ cart, handleCheckData, handleChangeQty,removeFromCart }
               <HStack justifyContent={'space-between'} ><Text fontSize={{ md: "0.8rem" }} fontWeight={"700"}>
                 {cart.title}
               </Text> <Box position={"relative"}>
-        <CloseIcon position={"absolute"} top={0} right={3} onClick={()=>removeFromCart(cart.id)}/>
-      </Box></HStack>
-              
+                  <CloseIcon position={"absolute"} top={0} right={3} onClick={() => removeFromCart(cart.id)} />
+                </Box></HStack>
+
               <Text fontSize={{ md: "0.8rem" }} mb={1} >
                 <Text display={"inline-block"} color={"gray.400"}>
                   Sold by:
@@ -170,10 +167,9 @@ const CartComponent = ({ cart, handleCheckData, handleChangeQty,removeFromCart }
               </Flex>
             </Box>
           </Stack>
-       
         </Flex>
       </Box>
-      
+
     </Box>
   );
 };

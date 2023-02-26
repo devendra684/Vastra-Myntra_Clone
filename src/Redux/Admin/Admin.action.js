@@ -1,4 +1,3 @@
-// import { async } from "@firebase/util";
 import {
   deleteAdminKidsdataAPI,
   deleteAdminMensdataAPI,
@@ -55,7 +54,6 @@ import {
 } from "./Admin.type";
 
 //POST_FUNCTION
-
 export const postMensData = (mensProduct) => async (dispatch) => {
   console.log("Men", mensProduct);
   dispatch({ type: GET_PRODUCTS_LOADING });
@@ -89,29 +87,28 @@ export const postKidsData = (kidsProduct) => async (dispatch) => {
   }
 };
 
-export const postUsersListData=(User)=>async(dispatch)=>{
-  dispatch({type:GET_PRODUCTS_LOADING})
- try {
-  await postUsersListAPI(User);
-  dispatch({type:ADD_USERSLIST_DATA})
- } catch (error) {
-   dispatch({type:GET_PRODUCTS_ERROR})
- }
+export const postUsersListData = (User) => async (dispatch) => {
+  dispatch({ type: GET_PRODUCTS_LOADING })
+  try {
+    await postUsersListAPI(User);
+    dispatch({ type: ADD_USERSLIST_DATA })
+  } catch (error) {
+    dispatch({ type: GET_PRODUCTS_ERROR })
+  }
 }
 
-export const postCurrentUserData=(currentUser)=>async(dispatch)=>{
-  dispatch({type:GET_PRODUCTS_LOADING})
- try {
-  await postCurrentUserAPI(currentUser);
-  dispatch({type:ADD_CURRENT_USER})
- } catch (error) {
-   dispatch({type:GET_PRODUCTS_ERROR})
- }
+export const postCurrentUserData = (currentUser) => async (dispatch) => {
+  dispatch({ type: GET_PRODUCTS_LOADING })
+  try {
+    await postCurrentUserAPI(currentUser);
+    dispatch({ type: ADD_CURRENT_USER })
+  } catch (error) {
+    dispatch({ type: GET_PRODUCTS_ERROR })
+  }
 }
 
 
 // GET-FUNCTION
-
 export const getMensData = () => async (dispatch) => {
   dispatch({ type: GET_PRODUCTS_LOADING });
   try {
@@ -162,19 +159,18 @@ export const getAdminData = () => async (dispatch) => {
   }
 };
 
-export const getCurrentUserData=()=>async(dispatch)=>{
-  dispatch({type:GET_PRODUCTS_LOADING})
- try {
-  let data = await getCurrentUserAPI();
-  dispatch({type:GET_CURRENT_USER,payload:data})
- } catch (error) {
-   dispatch({type:GET_PRODUCTS_ERROR})
- }
+export const getCurrentUserData = () => async (dispatch) => {
+  dispatch({ type: GET_PRODUCTS_LOADING })
+  try {
+    let data = await getCurrentUserAPI();
+    dispatch({ type: GET_CURRENT_USER, payload: data })
+  } catch (error) {
+    dispatch({ type: GET_PRODUCTS_ERROR })
+  }
 }
 
 
 //DELETE-FUNCTION
-
 export const deleteMensData = (id) => async (dispatch) => {
   dispatch({ type: GET_PRODUCTS_LOADING });
   try {
@@ -216,7 +212,6 @@ export const deleteKidsData = (id) => async (dispatch) => {
 };
 
 //UPDATE-FUNCTION
-
 export const updateMensData =
   (id, newPrice, newDiscount, newSrikePrice) => async (dispatch) => {
     dispatch({ type: GET_PRODUCTS_LOADING });
@@ -290,22 +285,22 @@ export const updateAdminPassword = (data) => async (dispatch) => {
   }
 };
 
-export const updateUsersListData = (id,state) => async (dispatch) => {
+export const updateUsersListData = (id, state) => async (dispatch) => {
   dispatch({ type: GET_PRODUCTS_LOADING });
   try {
-    await updateUsersListAPI(id,state);
-    dispatch({ type: UPDATE_USERSLIST_DATA});
+    await updateUsersListAPI(id, state);
+    dispatch({ type: UPDATE_USERSLIST_DATA });
   } catch (error) {
     dispatch({ type: GET_PRODUCTS_ERROR });
   }
 };
 
-export const updateCurrentUserData=(state)=>async(dispatch)=>{
-    dispatch({type:GET_PRODUCTS_LOADING})
-   try {
+export const updateCurrentUserData = (state) => async (dispatch) => {
+  dispatch({ type: GET_PRODUCTS_LOADING })
+  try {
     await updateCurrentUserAPI(state);
-    dispatch({type:UPDATE_CURRENT_USER})
-   } catch (error) {
-     dispatch({type:GET_PRODUCTS_ERROR})
-   }
+    dispatch({ type: UPDATE_CURRENT_USER })
+  } catch (error) {
+    dispatch({ type: GET_PRODUCTS_ERROR })
+  }
 }

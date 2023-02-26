@@ -4,7 +4,7 @@ import axios from "axios";
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { getSingleProductAPI } from "../Redux/Product/Product.api";
+import { getSingleProductAPI, getWomensSingleProductAPI,getKidsSingleProductAPI } from "../Redux/Product/Product.api";
 import { useDispatch } from "react-redux";
 import { fetchCartData } from "../Redux/Cart/Cart.action";
 import Navbar from "../Components/Navbar/Navbar";
@@ -26,9 +26,27 @@ const SingleProductPage = () => {
       })
       .catch((err) => console.log(err));
   };
+  const fetchWomensSingleProduct = async () => {
+    await getWomensSingleProductAPI(id)
+      .then((res) => {
+        setSingleProduct(res?.data);
+        setPoster(res?.data?.images[0]);
+      })
+      .catch((err) => console.log(err));
+  };
+  const fetchKidsSingleProduct = async () => {
+    await getKidsSingleProductAPI(id)
+      .then((res) => {
+        setSingleProduct(res?.data);
+        setPoster(res?.data?.images[0]);
+      })
+      .catch((err) => console.log(err));
+  };
 
   useEffect(() => {
     fetchSingleProduct();
+    fetchWomensSingleProduct();
+    fetchKidsSingleProduct();
   }, []);
 
   const {
@@ -46,14 +64,14 @@ const SingleProductPage = () => {
   const handleAddToWishlist = async () => {
     // console.log("newItem:",props)
     await axios
-      .post(`https://classic-world.onrender.com/WishList/`, singleProduct)
+      .post(`https://vastra.onrender.com/WishList/`, singleProduct)
       .then((res) => alert("Added to Wishlist Successfully...."))
       .catch((err) => alert("Already Exists in Your Bag"));
   };
   const AddtoBag = async () => {
     // console.log("newItem:",props)
     await axios
-      .post(`https://classic-world.onrender.com/cart/`, singleProduct)
+      .post(`https://vastra.onrender.com/cart/`, singleProduct)
       .then((res) => {
         alert("Added to bag Successfully....");
         dispatch(fetchCartData());
@@ -186,7 +204,7 @@ const SingleProductPage = () => {
                 borderTop={"2px solid gray"}
               >
                 <Text m={"0.5rem 0"} fontWeight={"500"} fontSize={"0.8rem"}>
-                  Product Details
+                  Product Details:
                 </Text>
                 <Flex
                   flexDirection={{ sm: "column", lg: "row" }}
@@ -249,7 +267,7 @@ const SingleProductPage = () => {
                 borderTop={"2px solid gray"}
                 p={"1rem"}
                 display={{
-                  base: "inlibe-block",
+                  base: "inline-block",
                   md: "inline-block",
                   lg: "inline-block",
                 }}

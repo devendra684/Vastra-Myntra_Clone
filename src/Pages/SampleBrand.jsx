@@ -3,6 +3,7 @@ import React from "react";
 
 const SampleBrand = ({ brands, handleCheck }) => {
   return (
+    
     <Box>
       <Select
         placeholder="All Brands"

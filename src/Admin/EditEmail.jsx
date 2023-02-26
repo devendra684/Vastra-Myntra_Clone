@@ -64,7 +64,7 @@ export default function EditEmail({
       isPreviewFocusable={false}
     >
       <EditablePreview />
-      {/* Here is the custom input */}
+      {/* Here is the Custom input */}
       <HStack>
         <Input
           style={hideEmail ? { display: "block" } : { display: "none" }}

@@ -34,7 +34,7 @@ function SingleCard({ ...props }) {
   const handleAddToWishlist = async () => {
    
       await axios
-        .post(`https://classic-world.onrender.com/WishList/`, prod)
+        .post(`https://vastra.onrender.com/WishList/`, prod)
         .then((res) => {
           alert("Added to Wishlist Successfully....");
           dispatch(fetchCartData());

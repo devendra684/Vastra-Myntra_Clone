@@ -63,7 +63,7 @@ export default function EditName({handleNameSubmit, name, setName }) {
       isPreviewFocusable={false}
     >
       <EditablePreview />
-      {/* Here is the custom input */}
+      {/* Here is the Custom input */}
       <HStack>
         <Input
           style={hideName ? { display: "block" } : { display: "none" }}

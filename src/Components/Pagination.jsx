@@ -1,7 +1,6 @@
 import { Box, Button } from "@chakra-ui/react";
 import React from "react";
 //import { useDispatch } from "react-redux";
-//import { getMensProducts } from "../Redux/Product/Product.action";
 
 const Pagination = ({
   setCurrentPage,
@@ -10,7 +9,6 @@ const Pagination = ({
   totalPages,
 }) => {
   
-
   totalPages = Math.ceil(+totalPages / 10);
 
   let buttonArr = [];

@@ -1,48 +1,47 @@
-
 import * as types from "./Wishlist.type"
 
-let initialState ={
-    loading:false,
-    error:false,
-    wishlistData:[],
+let initialState = {
+    loading: false,
+    error: false,
+    wishlistData: [],
 }
 
-export const wishlistReducer = (state = initialState ,{type,payload})=>{
-    switch(type){
+export const wishlistReducer = (state = initialState, { type, payload }) => {
+    switch (type) {
 
-        case types.GET_WISHLIST_LOADING:{
+        case types.GET_WISHLIST_LOADING: {
             return {
                 ...state,
-                loading:true,
-                error:false
+                loading: true,
+                error: false
             }
         }
 
-        case types.GET_WISHLIST_SUCCESS:{
+        case types.GET_WISHLIST_SUCCESS: {
             return {
                 ...state,
-                loading:false,
-                error:false,
-                wishlistData:payload
+                loading: false,
+                error: false,
+                wishlistData: payload
             }
         }
 
-        case types.DELETE_PRODUCT_SUCCESS:{
+        case types.DELETE_PRODUCT_SUCCESS: {
             return {
                 ...state,
-                loading:false,
-                error:false,
+                loading: false,
+                error: false,
             }
         }
 
-        case types.GET_WISHLIST_ERROR:{
-            return{
+        case types.GET_WISHLIST_ERROR: {
+            return {
                 ...state,
-                loading:false,
-                error:true
+                loading: false,
+                error: true
             }
         }
-        default:{
+        default: {
             return state
         }
     }
