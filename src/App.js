@@ -11,6 +11,7 @@ function App() {
     <div className="App">
       <AllRoutes />
       <Navbar /> 
+      
       {/* <FullDetails/> */}
       {/* <LoginOrSignUp />  */}
       {/* <Otp />  */}
