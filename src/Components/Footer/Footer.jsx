@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
   const footer1 = [
     {
-      title: "ONLINE SHOPPING",
+      title: "ONLINE-SHOPPING",
       sub: [
         "Men",
         "Women",

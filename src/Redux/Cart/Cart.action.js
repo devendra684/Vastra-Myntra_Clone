@@ -12,6 +12,7 @@ export const fetchCartData = () => async (dispatch) => {
     } catch (err) {
         dispatch({ type: types.GET_CART_ERROR })
     }
+
 }
 
 export const deleteCartData = (id) => async (dispatch) => {

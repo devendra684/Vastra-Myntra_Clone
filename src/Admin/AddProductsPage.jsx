@@ -377,6 +377,7 @@ export default function AddProductsPage() {
             </Flex>
             {step === 3 ? (
               <Button
+                // w="7rem"
                 colorScheme="blue"
                 variant="solid"
                 isLoading={loading}

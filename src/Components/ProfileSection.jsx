@@ -225,6 +225,7 @@ export default function ProfileSection() {
                 isDisabled={!booleanValue}
                 onClick={handleLogout}
               >
+              
                 Logout
               </Button>
             </Stack>

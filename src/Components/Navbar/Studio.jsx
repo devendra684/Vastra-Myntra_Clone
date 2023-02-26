@@ -16,8 +16,7 @@ export const StudioNav = () => {
 
             <div>
                 <img style={{
-                    width: "500px", }} 
-                    src="https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png" alt="" />
+                    width: "500px", }} src="https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png" alt="" />
             </div>
             <div className="explore_studio">
                 <button>

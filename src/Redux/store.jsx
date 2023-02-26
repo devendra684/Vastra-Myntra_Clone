@@ -8,6 +8,7 @@ import { WomensProductReducer } from "./Product/Product.reducer"
 import { KidsProductReducer } from "./Product/Product.reducer"
 import { wishlistReducer } from "./Wishlist/Wishlist.reducer"
 
+
 const rootReducer = combineReducers({
     mens: mensProductReducer,
     womens: WomensProductReducer,

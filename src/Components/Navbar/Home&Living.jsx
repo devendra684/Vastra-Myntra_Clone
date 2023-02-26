@@ -55,7 +55,7 @@ export const HomeLivingNav=()=>{
         <li>Aromas & Candles</li>
         <li>Clocks</li>
         <li>Mirrors</li>
-        <li>Wall Decor</li>
+        <li>WallDecor</li>
         <li>Wall Shelves</li>
         <li>Fountains</li>
         <li>Showpieces & Vases</li>

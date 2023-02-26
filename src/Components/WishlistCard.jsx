@@ -93,4 +93,5 @@ useEffect(()=>{
   );
 };
 
+
 export default WishlistCard;
