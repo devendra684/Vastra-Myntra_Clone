@@ -14,7 +14,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import {
-  getFilterdProducts,
+  getFilteredProducts,
   getMainData,
   getMensProducts,
   getMensProductsSorted,
@@ -28,27 +28,18 @@ import SampleBrand from "./SampleBrand";
 import Footer from "../Components/Footer/Footer";
 
 let brands = [
-  "HRX by Hrithik Roshan ",
+  "HRX by Hrithik Roshan",
   "Roadster",
-  // "The Indian Garage Co ",
   "HIGHLANDER",
   "LOCOMOTIVE",
   "United Colors of Benetton",
   "H&M",
-  // "Lee",
-  // "DENNISON",
-  // "HERE&NOW",
-  // "Levis",
+  "The Indian Garage Co",
+  "Lee",
+  "Levis",
   "WROGN",
-  // "Urbano Fashion",
   "High Star",
-  // "KRA",
-  // "Blackberrys",
-  // "Artengo By Decathlon",
-  // "FITINC",
-]; /**
-,
-*/
+];
 
 const Product = () => {
   const { loading, error, totalPages, products, filteredBrandData } =
@@ -98,13 +89,12 @@ const Product = () => {
   const handleChange = (e) => {
     setSValue(e.target.value);
   };
-
   // sorting filter ends here
 
   /*brand filter starts here */
 
   useEffect(() => {
-    dispatch(getFilterdProducts(brand));
+    dispatch(getFilteredProducts(brand));
   }, [brand, dispatch]);
 
   const handleCheck = (e) => {
@@ -117,15 +107,12 @@ const Product = () => {
     }
   };
   //console.log("isChecked", checked);
-
   /*brand filter ends here */
 
   /* handleClear starts here*/
-
   const handleClear = useCallback(() => {
     dispatch(getMensProducts(currentPage));
   }, [dispatch, currentPage]);
-
   /* handleClear ends here*/
 
   if (loading)
@@ -316,7 +303,7 @@ const Product = () => {
                       fontSize={"1.2rem"}
                       fontWeight={"bold"}
                       color={"pink.400"}
-                     
+                    
                     >
                       {" "}
                       Mens -
@@ -367,7 +354,6 @@ const Product = () => {
         </Flex>
 
         {/* </div> */}
-       
       </Box>
       <Footer/>
     </div>

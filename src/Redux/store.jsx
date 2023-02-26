@@ -5,10 +5,14 @@ import { adminReducer } from "./Admin/Admin.reducer"
 import { cartReducer } from "./Cart/Cart.reducer"
 import { checkoutReducer } from "./Checkout/Checkout.reducer"
 import { mensProductReducer } from "./Product/Product.reducer"
+import { WomensProductReducer } from "./Product/Product.reducer"
+import { KidsProductReducer } from "./Product/Product.reducer"
 import { wishlistReducer } from "./Wishlist/Wishlist.reducer"
 
 const rootReducer = combineReducers({
     mens: mensProductReducer,
+    womens: WomensProductReducer,
+    kids: KidsProductReducer,
     adminManager:adminReducer,
     wishlist:wishlistReducer,
     cart:cartReducer,
