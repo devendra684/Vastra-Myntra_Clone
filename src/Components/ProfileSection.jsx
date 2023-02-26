@@ -28,33 +28,45 @@ import { RiShutDownLine, RiCouponLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getCurrentUserData, getUsersListData, updateCurrentUserData, updateUsersListData } from "../Redux/Admin/Admin.action";
+import {
+  getCurrentUserData,
+  getUsersListData,
+  updateCurrentUserData,
+  updateUsersListData,
+} from "../Redux/Admin/Admin.action";
 
 export default function ProfileSection() {
   const dispatch = useDispatch();
-  const {usersListData,currentUserData} = useSelector((store)=>store.adminManager);
- 
-  useEffect(()=>{
+  const { usersListData, currentUserData } = useSelector(
+    (store) => store.adminManager
+  );
+
+  useEffect(() => {
     dispatch(getUsersListData());
     dispatch(getCurrentUserData());
-  },[dispatch])
+  }, [dispatch]);
 
   //console.log("CrU",currentUserData);
   let booleanValue = Boolean(currentUserData.isAuth);
 
   const handleLogout = () => {
-    for(let i=0;i<usersListData.length;i++){
-      let el=usersListData[i];
-      if( el.email===currentUserData.email && el.name===currentUserData.name && currentUserData.password===el.password){
-      dispatch(updateUsersListData(el.id,false)).then(()=>dispatch(getUsersListData()));
-      dispatch(updateCurrentUserData(false)).then(()=>dispatch(getCurrentUserData()));
-      
+    for (let i = 0; i < usersListData.length; i++) {
+      let el = usersListData[i];
+      if (
+        el.email === currentUserData.email &&
+        el.name === currentUserData.name &&
+        currentUserData.password === el.password
+      ) {
+        dispatch(updateUsersListData(el.id, false)).then(() =>
+          dispatch(getUsersListData())
+        );
+        dispatch(updateCurrentUserData(false)).then(() =>
+          dispatch(getCurrentUserData())
+        );
       }
       //console.log("b",booleanValue);
-      booleanValue= Boolean(currentUserData.isAuth);
+      booleanValue = Boolean(currentUserData.isAuth);
     }
-    
-    
   };
   return (
     <Flex justifyContent="center" mt={0}>
@@ -90,7 +102,7 @@ export default function ProfileSection() {
                 fontSize="md"
                 colorScheme={"pink"}
               >
-               Hello, {booleanValue ? currentUserData.name : "Welcome"}
+                Hello, {booleanValue ? currentUserData.name : "Welcome"}
               </Button>
               <Button
                 w="auto"
@@ -101,7 +113,9 @@ export default function ProfileSection() {
                 colorScheme="pink"
                 fontSize="sm"
               >
-                {booleanValue ? currentUserData.email : "To access account and orders"}
+                {booleanValue
+                  ? currentUserData.email
+                  : "To access account and orders"}
               </Button>
               <Button
                 w="auto"
@@ -125,7 +139,7 @@ export default function ProfileSection() {
                 colorScheme="pink"
                 fontSize="sm"
               >
-                Order  / <NavLink to="/wishlist"> Whishlist</NavLink>
+                Order / <NavLink to="/wishlist"> Whishlist</NavLink>
               </Button>
               <Button
                 w="auto"
