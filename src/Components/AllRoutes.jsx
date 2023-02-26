@@ -19,9 +19,26 @@ import Payment from "../Pages/Payment";
 import Success from "../Pages/Success";
 import { LoginOrSignUp } from "../Pages/LoginOrSignUp";
 import { FullDetails } from "../Pages/FullDetails";
+import { SeeFullDetails } from "../Pages/SeeFullDetails";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { getData } from "../Pages/storage";
+import { useEffect } from "react";
 
 const AllRoutes = () => {
   // console.log(userName);
+  const [fulldetails, setFullDetails] = useState("");
+  const [buttonLogging, setButtonLogging] = useState(false);
+  const navigate = useNavigate();
+
+  console.log(fulldetails);
+
+  useEffect(() => {
+    const getDetails = getData("details");
+    setFullDetails(getDetails);
+    //
+  }, []);
+
 
   return (
     <div>
@@ -31,10 +48,11 @@ const AllRoutes = () => {
         <Route path="/men" element={<Product />}></Route>
         <Route path="/product/:id" element={<SingleProductPage />}></Route>
         <Route path="/wishlist" element={<Wishlist />}></Route>
-        <Route path="/bag" element={<Cart />} ></Route>
-        <Route path="*" element={<PageNotFound />}></Route>
-        <Route path="/login" element={<LoginOrSignUp/>} />
-        <Route path="/fulldetails" element={<FullDetails/>}/>
+        <Route path="/bag" element={<Cart />}></Route>
+        <Route path="/login" element={<LoginOrSignUp />} />
+        <Route path="/fulldetails" element={<FullDetails />} />
+        <Route path="/seeFullDetails" element={<SeeFullDetails />} />
+        {/* {} */}
         {/* <Route path="/register" element={<Register />}></Route> */}
         <Route path="/admin-dashboard" element={<AdminDashboard />}></Route>
         <Route path="/add-products" element={<AddProductsPage />}></Route>
@@ -43,9 +61,10 @@ const AllRoutes = () => {
         <Route path="/admin-kids" element={<KidsPage />}></Route>
         <Route path="/admin-users" element={<UsersPage />}></Route>
         <Route path="/admin-profile" element={<AdminProfilePage />}></Route>
-        <Route path="/address" element={<Address />} ></Route>
+        <Route path="/address" element={<Address />}></Route>
         <Route path="/payment" element={<Payment />}></Route>
-        <Route path="/success" element={<Success />} ></Route>
+        <Route path="/success" element={<Success />}></Route>
+        <Route path="*" element={<PageNotFound />}></Route>
       </Routes>
     </div>
   );

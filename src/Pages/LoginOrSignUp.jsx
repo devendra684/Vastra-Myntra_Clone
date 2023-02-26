@@ -1,11 +1,15 @@
+import { Button } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 import "../css/LoginOrSignUp.css";
+import { getData } from "./storage";
 // import "../css/Home.css";
 
 export const LoginOrSignUp = () => {
   const [details, setDetails] = useState("userdetails");
+  const [buttonLogging, setButtonLogging] = useState(false);
+
   console.log(details);
   const navigate = useNavigate();
 
@@ -15,12 +19,17 @@ export const LoginOrSignUp = () => {
   };
 
   const handleSubmit = () => {
-    navigate("/fullDetails");
+    setButtonLogging(true);
+    setTimeout(() => {
+      console.log("hua kuchh");
+      setButtonLogging(false);
+      navigate("/fullDetails");
+    }, 1000);
   };
 
   return (
     <div className="background">
-    <Navbar/>
+      <Navbar />
       <div className="Login_Master">
         <div>
           <img
@@ -37,7 +46,7 @@ export const LoginOrSignUp = () => {
               name="phone"
               onChange={handleChange}
               type="text"
-              maxLength={10}
+              maxlength={10}
               placeholder="Mobile Number *"
             />
           </div>
@@ -48,11 +57,17 @@ export const LoginOrSignUp = () => {
             <p> & </p>
             <h1> Privacy Policy</h1>
           </div>
-
           <div className="buttonFather">
-            <button className="button" onClick={handleSubmit}>
+            <Button
+              className="logout"
+              isLoading={buttonLogging}
+              loadingText="Logging Out"
+              colorScheme="teal"
+              variant="outline"
+              onClick={handleSubmit}
+            >
               CONTINUE
-            </button>
+            </Button>
           </div>
 
           <div className="termsAndCondition">
