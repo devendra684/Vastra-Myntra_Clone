@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/LoginOrSignUp.css";
 // import "../css/Home.css";
 
 export const LoginOrSignUp = () => {
+  const [details, setDetails] = useState("userdetails");
+  console.log(details);
+
+  const handleChange = (e) => {
+    // value=e.target.value;
+    setDetails(+e.target.value);
+  };
+
+  const handleSubmit = () => {
+    console.log("eminem");
+  };
+
   return (
     <div className="Login_Master">
       <div>
@@ -11,17 +23,36 @@ export const LoginOrSignUp = () => {
           alt="Error"
         />
       </div>
+
       <div className="form">
         <h1 className="formh1">Login / Signup</h1>
         <div className="forminput">
           <h1>+91 | </h1>
-          <input type="text" placeholder="Mobile Number *" />
+          <input
+            name="phone"
+            onChange={handleChange}
+            type="text"
+            maxLength={10}
+            placeholder="Mobile Number *"
+          />
         </div>
+
         <div className="termsAndCondition">
           <p>By continuing, I agree to the </p>
           <h1> Terms of Use </h1>
           <p> & </p>
           <h1> Privacy Policy</h1>
+        </div>
+
+        <div className="buttonFather">
+          <button className="button" onClick={handleSubmit}>
+            CONTINUE
+          </button>
+        </div>
+
+        <div className="termsAndCondition">
+          <p>Have trouble logging in?</p>
+          <h1>Get Help</h1>
         </div>
       </div>
     </div>

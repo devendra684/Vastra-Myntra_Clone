@@ -4,27 +4,20 @@ import Home from "../Pages/Home";
 // import Login from "../Pages/Login";
 import PageNotFound from "../Pages/PageNotFound";
 // import Register from "../Pages/Register";
-// import Product from "../Pages/Product";
-// import Cards from "./men page/Product/Cards";
+import Product from "../Pages/Product";
 import AdminDashboard from "../Admin/AdminDashboard";
-// import SingleProductPage from "../Pages/SingleProductPage";
+import SingleProductPage from "../Pages/SingleProductPage";
 import AddProductsPage from "../Admin/AddProductsPage";
 import MensPage from "../Admin/MensPage";
 import WomensPage from "../Admin/WomensPage";
 import KidsPage from "../Admin/KidsPage";
 import UsersPage from "../Admin/UsersPage";
 import AdminProfilePage from "../Admin/AdminProfilePage";
-// import Address from "../Pages/Address";
-// import Wishlist from "../Pages/Wishlist";
-// import Cart from "../Pages/Cart";
-// import Payment from "../Pages/Payment";
-// import Success from "../Pages/Success";
-import { PrivateRoute } from "./PrivateRouting";
-import Details from "../Pages/mensPage/Details";
-import HomePage from "../Pages/mensPage/HomePage";
-import Cards from "./mensPage/Product/Cards";
-import ProductItem from "./mensPage/Product/ProductItem";
-// import { Navbar } from '../Components/Navbar/Navbar';
+import Address from "../Pages/Address";
+import Wishlist from "../Pages/Wishlist";
+import Cart from "../Pages/Cart";
+import Payment from "../Pages/Payment";
+import Success from "../Pages/Success";
 
 const AllRoutes = () => {
   // console.log(userName);
@@ -34,24 +27,10 @@ const AllRoutes = () => {
       <Routes>
         {/* <Route path="/" element={<Navbar />}></Route> */}
         <Route path="/" element={<Home />}></Route>
-        <Route path="/HomePage" element={<HomePage/>}></Route>
-        <Route path="/details" element={ <Details/>  }></Route>
-        {/* <Route path="/product" element={<Product />}></Route> */}
-        
-        {/* <Route path="/Cards" element={<Cards />}></Route> */}
-        {/* <Route path="/product/:id" element={<SingleProductPage />}></Route> */}
-        <Route
-          path="/wishlist"
-          // element={
-          // <PrivateRoute>
-          // <Wishlist />
-          //</PrivateRoute>
-          // }
-        ></Route>
-        <Route
-          path="/cart"
-          element={<PrivateRoute>{/* <Cart /> */}</PrivateRoute>}
-        ></Route>
+        <Route path="/men" element={<Product />}></Route>
+        <Route path="/product/:id" element={<SingleProductPage />}></Route>
+        <Route path="/wishlist" element={<Wishlist />}></Route>
+        <Route path="/bag" element={<Cart />} ></Route>
         <Route path="*" element={<PageNotFound />}></Route>
         {/* <Route path="/login" element={<Login />}></Route> */}
         {/* <Route path="/register" element={<Register />}></Route> */}
@@ -62,18 +41,9 @@ const AllRoutes = () => {
         <Route path="/admin-kids" element={<KidsPage />}></Route>
         <Route path="/admin-users" element={<UsersPage />}></Route>
         <Route path="/admin-profile" element={<AdminProfilePage />}></Route>
-        <Route
-          path="/address"
-          element={<PrivateRoute>{/* <Address /> */}</PrivateRoute>}
-        ></Route>
-        <Route
-          path="/payment"
-          element={<PrivateRoute>{/* <Payment /> */}</PrivateRoute>}
-        ></Route>
-        <Route
-          path="/success"
-          element={<PrivateRoute>{/* <Success /> */}</PrivateRoute>}
-        ></Route>
+        <Route path="/address" element={<Address />} ></Route>
+        <Route path="/payment" element={<Payment />}></Route>
+        <Route path="/success" element={<Success />} ></Route>
       </Routes>
     </div>
   );

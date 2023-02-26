@@ -2,17 +2,17 @@ import {legacy_createStore , applyMiddleware ,compose , combineReducers} from "r
 
 import thunk from "redux-thunk"
 import { adminReducer } from "./Admin/Admin.reducer"
-// import { cartReducer } from "./Cart/Cart.reducer"
-// import { checkoutReducer } from "./Checkout/Checkout.reducer"
-// import { mensProductReducer } from "./Product/Product.reducer"
-// import { wishlistReducer } from "./Wishlist/Wishlist.reducer"
+import { cartReducer } from "./Cart/Cart.reducer"
+import { checkoutReducer } from "./Checkout/Checkout.reducer"
+import { mensProductReducer } from "./Product/Product.reducer"
+import { wishlistReducer } from "./Wishlist/Wishlist.reducer"
 
 const rootReducer = combineReducers({
-    // mens: mensProductReducer,
+    mens: mensProductReducer,
     adminManager:adminReducer,
-    // wishlist:wishlistReducer,
-    // cart:cartReducer,
-    // checkout:checkoutReducer
+    wishlist:wishlistReducer,
+    cart:cartReducer,
+    checkout:checkoutReducer
 })
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose

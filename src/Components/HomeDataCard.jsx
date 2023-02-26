@@ -1,5 +1,5 @@
 import React from 'react';
-import "../css/Home.css";
+import  "../Styles/Home.css";
 
 
 export const HomeDataCard = ({image}) => {

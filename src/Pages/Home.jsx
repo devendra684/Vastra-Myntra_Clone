@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { HomeDataCard } from "../Components/HomeDataCard";
 import { HomeData, slider as images } from "../Redux/HomeData";
-import "../css/Home.css";
+import "../Styles/Home.css";
+
 import SimpleImageSlider from "react-simple-image-slider";
-import { Navbar } from '../Components/Navbar/Navbar';
-import { Footer } from '../Components/Footer/Footer'
+import Navbar from '../Components/Navbar/Navbar';
+import Footer from '../Components/Footer/Footer'
 // import { LoginOrSignUp } from './Pages/LoginOrSignUp';
 
 const Home = () => {
+  
   const [OmgDeals, setOmgDeals] = useState([]);
   const [HoliDeals, setHoliDeals] = useState([]);
   const [BrandsToBag, setBrandsToBag] = useState([]);
