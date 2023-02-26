@@ -62,7 +62,7 @@ const handleOpen=(id)=>{
           <Table variant="striped" colorScheme="pink">
             <Thead bg={"#990578"}>
               <Tr>
-                <Th color={"white"}>So No.</Th>
+                <Th color={"white"}>Sr No.</Th>
                 <Th color={"white"}>Image</Th>
                 <Th color={"white"}>Title</Th>
                 <Th color={"white"}>Brand</Th>
@@ -107,7 +107,7 @@ const handleOpen=(id)=>{
               </FormControl>
 
               <FormControl mt={4}>
-                <FormLabel>Dicscount Price </FormLabel>
+                <FormLabel>Discount Price </FormLabel>
                 <Input
                   placeholder="Discount"
                   type={"number"}

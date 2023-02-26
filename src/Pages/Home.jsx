@@ -2,14 +2,12 @@ import React, { useEffect, useState } from "react";
 import { HomeDataCard } from "../Components/HomeDataCard";
 import { HomeData, slider as images } from "../Redux/HomeData";
 import "../Styles/Home.css";
-
 import SimpleImageSlider from "react-simple-image-slider";
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer'
 // import { LoginOrSignUp } from './Pages/LoginOrSignUp';
 
 const Home = () => {
-  
   const [OmgDeals, setOmgDeals] = useState([]);
   const [HoliDeals, setHoliDeals] = useState([]);
   const [BrandsToBag, setBrandsToBag] = useState([]);
@@ -28,17 +26,16 @@ const Home = () => {
     });
   }, []);
 
-  return ( 
+  return (
     <div className="grandFather">
-    <Navbar />
-
+      <Navbar />
       <SimpleImageSlider
-              width="100%"
-              height="400px"
-              images={images}
-              showBullets={true}
-              showNavs={true}
-              autoPlay={true}
+        width="100%"
+        height="400px"
+        images={images}
+        showBullets={true}
+        showNavs={true}
+        autoPlay={true}
       />
 
       <div className="OmgDealsFather">
@@ -50,23 +47,21 @@ const Home = () => {
         </div>
       </div>
 
-
       <div className="BrandsToBagFather">
         {/* <h1 className="imgh1">Holi Deals</h1> */}
-        <img className="GifImg" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto:eco,w_600,c_limit,fl_progressive/assets/images/2023/2/22/e6f16109-5957-4397-a990-89645ff067bb1677051268935-Pick-Your-Holi-Look.gif" alt="Pick-Your-Holi-Look" padding="0" marginBottom="0px"/>
+        <img className="GifImg" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto:eco,w_600,c_limit,fl_progressive/assets/images/2023/2/22/e6f16109-5957-4397-a990-89645ff067bb1677051268935-Pick-Your-Holi-Look.gif" alt="Pick-Your-Holi-Look" padding="0" marginBottom="0px" />
         <div className="HoliDeals">
           {HoliDeals.length > 0 &&
-            HoliDeals.map((el) =><HomeDataCard key={el.id} {...el} />)}
+            HoliDeals.map((el) => <HomeDataCard key={el.id} {...el} />)}
         </div>
       </div>
 
-
       <div className="BrandsToBagFather">
         {/* <h1 className="imgh1">Brand to bag</h1> */}
-        <img className="GifImg" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto:eco,w_600,c_limit,fl_progressive/assets/images/2023/2/22/05bae013-eb04-4ffb-abe5-374ce442ce451677057222226-Brands-On-The-Way-Up.gif" alt="Brands-On-The-Way-Up" padding="0" marginBottom="0px"/>
+        <img className="GifImg" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto:eco,w_600,c_limit,fl_progressive/assets/images/2023/2/22/05bae013-eb04-4ffb-abe5-374ce442ce451677057222226-Brands-On-The-Way-Up.gif" alt="Brands-On-The-Way-Up" padding="0" marginBottom="0px" />
         <div className="BrandsToBag">
           {BrandsToBag.length > 0 &&
-            BrandsToBag.map((el) =><HomeDataCard key={el.id} {...el} />)}
+            BrandsToBag.map((el) => <HomeDataCard key={el.id} {...el} />)}
         </div>
       </div>
 
@@ -78,7 +73,6 @@ const Home = () => {
             ShopByCategory.map((el) => <HomeDataCard key={el.id} {...el} />)}
         </div>
       </div>
-
 
       <div className="GrandBrandFather">
         {/* <h1 className="imgh1">Grand Brand</h1> */}
@@ -98,12 +92,12 @@ const Home = () => {
         </div>
       </div>
 
+      {/* 3 days-delivery */}
       <img className="Delivery" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto:eco,w_600,c_limit,fl_progressive/assets/images/retaillabs/2023/2/17/32b8f01e-4b71-446b-b103-668ed70873c71676653509048-M-Express-3-Days.gif" alt="Delivery-Express-3-Days" />
-      
+      {/* Payment */}
       <img className="Delivery" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto:eco,w_600,c_limit,fl_progressive/assets/images/retaillabs/2023/2/22/6d1c4d3d-6fd9-4b52-8dc0-4c8b7e2453e61677061466410-RTB--4-.jpg" alt="order & payment" />
-      <Footer/>
+      <Footer />
     </div>
-    
   );
 };
 

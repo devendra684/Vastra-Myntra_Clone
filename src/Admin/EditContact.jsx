@@ -65,7 +65,7 @@ export default function EditContact({
       isPreviewFocusable={false}
     >
       <EditablePreview />
-      {/* Here is the custom input */}
+      {/* Here is the Custom input */}
       <HStack>
         <Input
           style={hideContact ? { display: "block" } : { display: "none" }}

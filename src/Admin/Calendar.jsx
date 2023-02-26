@@ -8,8 +8,7 @@ export default function Calendars() {
             <div elevation={3}>
                 <Calendar 
                     background-color= '#FFFFFF'
-                    border-radius= '6px'
-                >
+                    border-radius= '6px'>
                 </Calendar>
             </div>
         </div>

@@ -6,6 +6,7 @@ let initialState ={
     cartData:[],
 }
 
+
 export const cartReducer = (state = initialState ,{type,payload})=>{
     switch(type){
 

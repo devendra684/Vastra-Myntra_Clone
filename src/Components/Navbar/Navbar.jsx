@@ -9,8 +9,6 @@ import { MenNav } from "./Men";
 import { StudioNav } from "./Studio";
 import { getData } from "../../Pages/storage";
 
-// import { useAuth } from "../../Context/AuthContext";
-
 const Div = styled.nav`
   position: fixed;
   display: flex;
@@ -46,9 +44,8 @@ const Navbar = () => {
               marginLeft: "15%",
               // marginRight: "30%",
             }}
-            src="/VastraLogo.png"
+            src="/Logo.jpg"
             // src={V_Logo}
-
             alt=""
           />
         </Link>
@@ -66,11 +63,8 @@ const Navbar = () => {
               paddingBottom: "10px",
               paddingLeft: "20px",
               paddingRight: "5px",
-
               whiteSpace: "nowrap",
-
               wordWrap: "normal",
-
               //   hoverBorderBottom:"5px solid #ee5f73"
             }}
             to="/men"
@@ -94,9 +88,7 @@ const Navbar = () => {
               paddingBottom: "10px",
               paddingLeft: "5px",
               paddingRight: "5px",
-
               whiteSpace: "nowrap",
-
               wordWrap: "normal",
             }}
             to="/women"
@@ -194,9 +186,7 @@ const Navbar = () => {
               paddingLeft: "5px",
               paddingRight: "5px",
               marginBottom: "-2%",
-
               whiteSpace: "nowrap",
-
               wordWrap: "normal",
             }}
             to="/Studio"
@@ -242,11 +232,9 @@ const Navbar = () => {
               <Link to={"/seeFullDetails"} className="rightLink">
                 Profile
               </Link>
-              {/* )} */}
             </span>
           </p>
           <p style={{ marginLeft: "2%", cursor: "pointer" }}>
-           
             <span>
               <Link to={"/wishlist"} className="rightLink">
               <img
@@ -288,7 +276,7 @@ const Navbar = () => {
               </Link>
             </span>
           </p>
-          {/* Admint */}
+          {/* Admin */}
           <p
             style={{
               // border: '1px solid red',

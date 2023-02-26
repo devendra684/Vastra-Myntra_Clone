@@ -45,8 +45,8 @@ export default function ProfileSection() {
     dispatch(getUsersListData());
     dispatch(getCurrentUserData());
   }, [dispatch]);
-
   //console.log("CrU",currentUserData);
+  
   let booleanValue = Boolean(currentUserData.isAuth);
 
   const handleLogout = () => {
@@ -139,7 +139,7 @@ export default function ProfileSection() {
                 colorScheme="pink"
                 fontSize="sm"
               >
-                Order / <NavLink to="/wishlist"> Whishlist</NavLink>
+                Order / <NavLink to="/wishlist"> Wishlist</NavLink>
               </Button>
               <Button
                 w="auto"
@@ -171,7 +171,7 @@ export default function ProfileSection() {
                 colorScheme="pink"
                 fontSize="sm"
               >
-                Classic World Insider
+                Vastra Insider
                 <Tag
                   size={"sm"}
                   bg={useColorModeValue("pink.500", "green.800")}
@@ -190,7 +190,7 @@ export default function ProfileSection() {
                 colorScheme="pink"
                 fontSize="sm"
               >
-                Classic World Credit
+                Vastra Credit
               </Button>
               <Button
                 w="auto"

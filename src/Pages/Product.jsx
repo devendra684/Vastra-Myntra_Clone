@@ -1,20 +1,11 @@
 import React, { useState } from "react";
 import prodStyle from "../Styles/Products.module.css";
 import SingleCard from "../Components/SingleCard";
-import {
-  Box,
-  Checkbox,
-  Flex,
-  Grid,
-  Heading,
-  Select,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Box,Checkbox, Flex, Grid, Heading, Select, Stack, Text } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import {
-  getFilterdProducts,
+  getFilteredProducts,
   getMainData,
   getMensProducts,
   getMensProductsSorted,
@@ -28,27 +19,18 @@ import SampleBrand from "./SampleBrand";
 import Footer from "../Components/Footer/Footer";
 
 let brands = [
-  "HRX by Hrithik Roshan ",
+  "HRX by Hrithik Roshan",
   "Roadster",
-  // "The Indian Garage Co ",
   "HIGHLANDER",
   "LOCOMOTIVE",
   "United Colors of Benetton",
   "H&M",
-  // "Lee",
-  // "DENNISON",
-  // "HERE&NOW",
-  // "Levis",
+  "The Indian Garage Co",
+  "Lee",
+  "Levis",
   "WROGN",
-  // "Urbano Fashion",
   "High Star",
-  // "KRA",
-  // "Blackberrys",
-  // "Artengo By Decathlon",
-  // "FITINC",
-]; /**
-,
-*/
+];
 
 const Product = () => {
   const { loading, error, totalPages, products, filteredBrandData } =
@@ -98,13 +80,12 @@ const Product = () => {
   const handleChange = (e) => {
     setSValue(e.target.value);
   };
-
   // sorting filter ends here
 
   /*brand filter starts here */
 
   useEffect(() => {
-    dispatch(getFilterdProducts(brand));
+    dispatch(getFilteredProducts(brand));
   }, [brand, dispatch]);
 
   const handleCheck = (e) => {
@@ -117,15 +98,12 @@ const Product = () => {
     }
   };
   //console.log("isChecked", checked);
-
   /*brand filter ends here */
 
   /* handleClear starts here*/
-
   const handleClear = useCallback(() => {
     dispatch(getMensProducts(currentPage));
   }, [dispatch, currentPage]);
-
   /* handleClear ends here*/
 
   if (loading)
@@ -146,7 +124,7 @@ const Product = () => {
       <Navbar />
       <Box
         className={prodStyle.product_container}
-        mt={{ base:'5rem',sm: "5rem", md: "3.9rem", lg: "7.2rem" }}
+        mt={{ base: '5rem', sm: "5rem", md: "3.9rem", lg: "7.2rem" }}
       >
         <Flex
           position={"relative"}
@@ -171,20 +149,20 @@ const Product = () => {
             }}
           >
             <Text
-            // height={"60px"}
+              // height={"60px"}
               display={"inline-block"}
               fontSize={"1.5rem"}
               fontWeight={"bold"}
               color={"pink.400"}
-              // mt={"5rem"}
+            // mt={"5rem"}
             >
               {" "}
-                Mens -
+              Mens -
             </Text>{" "}
             ({totalPages})
           </Box>
           <Box
-            display={{ sm: "none",base:'none',md:'none', lg: "inline-block" }}
+            display={{ sm: "none", base: 'none', md: 'none', lg: "inline-block" }}
             position={"absolute"}
             w={"20%"}
             top={"4rem"}
@@ -241,8 +219,8 @@ const Product = () => {
 
           <Box
             border={"0px solid gray"}
-            w={{ lg: "80%", sm: "100%", md: "100%",base:'100%' }}
-            ml={{base:0,sm:0,md:0,lg:"22%"}}
+            w={{ lg: "80%", sm: "100%", md: "100%", base: '100%' }}
+            ml={{ base: 0, sm: 0, md: 0, lg: "22%" }}
           >
             <div className={prodStyle.products}>
               <Flex
@@ -252,8 +230,8 @@ const Product = () => {
                 backgroundColor={"white"}
                 mb={"1rem"}
               >
-                <Box 
-                  w={{ base:'100%',sm: "100%", md: "100%", lg: "100%" }}
+                <Box
+                  w={{ base: '100%', sm: "100%", md: "100%", lg: "100%" }}
                   m={"0.5rem"}
                   display={'flex'}
                   flexDirection={{
@@ -269,54 +247,54 @@ const Product = () => {
                   boxShadow={'sm'}
                 >
                   <Box width={'100%'} border={'0px solid red'} >
-                  <Text ml={2} textAlign={"left"}>
-                    <b>Sort By :</b>
-                  </Text>
-                  <Select
-                    variant="solid"
-                    placeholder="All"
-                    p={2}
-                    bg={"gray.200"}
-                    onChange={(e) => handleChange(e)}
-                  >
-                    <option value="rating">Rating </option>
-                    <option value="discount">Better Discount</option>
-                    <option value="PriceLTH">Price:Low To High</option>
-                    <option value="PriceHTL">Price:High To Low</option>
-                  </Select>
+                    <Text ml={2} textAlign={"left"}>
+                      <b>Sort By :</b>
+                    </Text>
+                    <Select
+                      variant="solid"
+                      placeholder="All"
+                      p={2}
+                      bg={"gray.200"}
+                      onChange={(e) => handleChange(e)}
+                    >
+                      <option value="rating">Rating </option>
+                      <option value="discount">Better Discount</option>
+                      <option value="PriceLTH">Price:Low To High</option>
+                      <option value="PriceHTL">Price:High To Low</option>
+                    </Select>
                   </Box>
                   {/* filters */}
                   <Box border={'0px solid black'} width={'100%'} >
-                  <Text
-                    ml={2}
-                    textAlign={"left"}
-                    display={{
-                      base: "flex",
-                      sm: "flex",
-                      md: "flex",
-                      lg: "none",
-                    }}
-                  >
-                    <b>Filters :</b>
-                  </Text>
-                  <Stack
-                    display={{
-                      base: "flex",
-                      sm: "flex",
-                      md: "flex",
-                      lg: "none",
-                    }}
-                  >
-                    <SampleBrand brands={brands} handleCheck={handleCheck} />
-                  </Stack>
+                    <Text
+                      ml={2}
+                      textAlign={"left"}
+                      display={{
+                        base: "flex",
+                        sm: "flex",
+                        md: "flex",
+                        lg: "none",
+                      }}
+                    >
+                      <b>Filters :</b>
+                    </Text>
+                    <Stack
+                      display={{
+                        base: "flex",
+                        sm: "flex",
+                        md: "flex",
+                        lg: "none",
+                      }}
+                    >
+                      <SampleBrand brands={brands} handleCheck={handleCheck} />
+                    </Stack>
                   </Box>
-                  <Box border={'0px solid green'} width={'100%'} display={{base:'inline-block',sm:'inline-block',md:'inline-block',lg:'none'}} justifyContent={'flex-end'}  textAlign={{base:'center',sm:'center',md:'right'}} >
+                  <Box border={'0px solid green'} width={'100%'} display={{ base: 'inline-block', sm: 'inline-block', md: 'inline-block', lg: 'none' }} justifyContent={'flex-end'} textAlign={{ base: 'center', sm: 'center', md: 'right' }} >
                     <Text
                       display={"inline-block"}
                       fontSize={"1.2rem"}
                       fontWeight={"bold"}
                       color={"pink.400"}
-                     
+
                     >
                       {" "}
                       Mens -
@@ -362,14 +340,12 @@ const Product = () => {
                 totalPages={totalPages}
               />
             </Box>
-            {/* <Footer/> */}
           </Box>
         </Flex>
 
         {/* </div> */}
-       
       </Box>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

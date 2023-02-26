@@ -22,7 +22,7 @@ import {
 import {AiOutlineShoppingCart,AiOutlineDelete,AiOutlineMail} from 'react-icons/ai'
 import { BsRecord2,BsTelephoneInbound,BsThreeDotsVertical } from 'react-icons/bs'
 export default function UserCard({name,email,contact,isAuth,id,deleteUsers, image,logindetails}) {
- 
+
   //const {lastSignInTime,createdAt,creationTime,lastLoginAt} = logindetails
    // console.log(lastSignInTime,createdAt,creationTime,lastLoginAt);
   return (
@@ -30,7 +30,7 @@ export default function UserCard({name,email,contact,isAuth,id,deleteUsers, imag
   <CardHeader>
     <Flex spacing='4'  >
       <Flex flex='1' gap='4' alignItems='center'flexWrap='wrap'>
-       {image!=="" && isAuth===true? <Avatar src={image} size={'lg'} >
+        {image!=="" && isAuth===true? <Avatar src={image} size={'lg'} >
         <AvatarBadge boxSize='1em' bg='green.500' />
         </Avatar>: image==="" && isAuth===true? <Avatar name={name}  size={'lg'} >
         <AvatarBadge boxSize='1em' bg='green.500' />
@@ -67,7 +67,7 @@ export default function UserCard({name,email,contact,isAuth,id,deleteUsers, imag
               <Stack textAlign={'left'}  >
               <Text fontWeight={'bold'} color={'pink.700'} fontSize={20}>Login Details</Text>
               <Stack boxShadow={'md'} padding={2} spacing={0} bgGradient="linear(to-t, pink,white,white)"  >
-              <Text fontWeight={'semibold'}>Acount created At</Text>
+              <Text fontWeight={'semibold'}>Account created At</Text>
               <Text > No Such Details Found</Text>
               </Stack>
               <Stack boxShadow={'md'} padding={2} spacing={0}bgGradient="linear(to-t, pink,white,white)" >

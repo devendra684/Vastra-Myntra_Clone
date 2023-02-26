@@ -7,14 +7,15 @@ export const Otp = () => {
   const [OTP, setOTP] = useState("");
   console.log(OTP);
 
-  useEffect(()=>{
-    if(OTP.length==4){
-        handleFunc()
+  useEffect(() => {
+    if (OTP.length == 4) {
+      handleFunc()
     }
-  },[OTP])
+  }, [OTP])
 
-  const handleFunc=()=>{
-    console.log("ho raha hai bro")
+  const handleFunc = () => {
+    console.log("OTP Successfully")
+
   }
 
   return (
@@ -37,11 +38,11 @@ export const Otp = () => {
           otpType="number"
           disabled={false}
           secure={false}
-          inputStyles={{ border: "2px solid black",width:"30px",height:"40px",borderRadius:"5px",borderColor:"#ff3c6f"}}
+          inputStyles={{ border: "2px solid black", width: "30px", height: "40px", borderRadius: "5px", borderColor: "#ff3c6f" }}
         />
         <ResendOTP
           style={{ width: "150px", marginTop: "10px", text: "eminem" }}
-           onResendClick={() => console.log("Resend clicked")}
+          onResendClick={() => console.log("Resend clicked")}
         />
       </div>
       {/* <div className="loginProblem">

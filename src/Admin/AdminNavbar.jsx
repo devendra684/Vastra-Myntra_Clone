@@ -1,7 +1,6 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom'
-import LOGO from '../Assets/Logo.jpg';
-import AdminProfile from '../Assets/AdminProfile.jpg';
+import { NavLink } from 'react-router-dom';
+// import AdminProfile from '../Assets/AdminProfile.jpg';
 import {
   IconButton,
   Avatar,
@@ -21,39 +20,39 @@ import {
   MenuButton,
   AvatarBadge
 } from '@chakra-ui/react';
-import {FiMenu} from 'react-icons/fi';
-import {AiFillHome} from 'react-icons/ai'
-import {BsFillBellFill} from 'react-icons/bs'
-import {HiFolderAdd} from 'react-icons/hi'
-import {ImMan,ImWoman} from 'react-icons/im';
-import {FaChild,FaUsers} from 'react-icons/fa'
-import {RiAccountPinCircleFill,RiLogoutCircleFill} from 'react-icons/ri'
+import { FiMenu } from 'react-icons/fi';
+import { AiFillHome } from 'react-icons/ai'
+import { BsFillBellFill } from 'react-icons/bs'
+import { HiFolderAdd } from 'react-icons/hi'
+import { ImMan, ImWoman } from 'react-icons/im';
+import { FaChild, FaUsers } from 'react-icons/fa'
+import { RiAccountPinCircleFill, RiLogoutCircleFill } from 'react-icons/ri'
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { getAdminData } from '../Redux/Admin/Admin.action';
 
-const LinkItems= [
-  { name: 'Home', icon: AiFillHome, path:'/admin-dashboard'},
-  { name: 'Add Product', icon: HiFolderAdd, path:'/add-products' },
-  { name: 'Men', icon: ImMan, path:'/admin-men' },
-  { name: 'Women', icon: ImWoman, path:'/admin-women' },
-  { name: 'Kids', icon: FaChild, path:'/admin-kids' },
-  { name: 'Users', icon: FaUsers, path:'/admin-users' },
-  { name: 'Account', icon: RiAccountPinCircleFill, path:'/admin-profile' },
-  { name: 'Logout', icon: RiLogoutCircleFill, path:'/' }
+const LinkItems = [
+  { name: 'Home', icon: AiFillHome, path: '/admin-dashboard' },
+  { name: 'Add Product', icon: HiFolderAdd, path: '/add-products' },
+  { name: 'Men', icon: ImMan, path: '/admin-men' },
+  { name: 'Women', icon: ImWoman, path: '/admin-women' },
+  { name: 'Kids', icon: FaChild, path: '/admin-kids' },
+  { name: 'Users', icon: FaUsers, path: '/admin-users' },
+  { name: 'Account', icon: RiAccountPinCircleFill, path: '/admin-profile' },
+  { name: 'Logout', icon: RiLogoutCircleFill, path: '/' }
 ];
 //RiLogoutCircleFill
 export default function AdminNavbar({
   children,
 }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const {adminData} = useSelector((store)=>store.adminManager);
+  const { adminData } = useSelector((store) => store.adminManager);
   const dispatch = useDispatch();
-  useEffect(()=>{ 
+  useEffect(() => {
     dispatch(getAdminData());
-  },[])
+  }, [])
   return (
-  <Box border={'0px solid black'} pos={'fixed'} top={0} right={0} left={0} zIndex={999}>
+    <Box border={'0px solid black'} pos={'fixed'} top={0} right={0} left={0} zIndex={999}>
       <SidebarContent
         onClose={() => onClose}
         display={{ base: 'none', md: 'block' }}
@@ -91,9 +90,11 @@ const SidebarContent = ({ onClose, ...rest }) => {
       h="full"
       {...rest}>
       <Flex h="20" alignItems="center" mx="14" justifyContent="space-between"  >
-     
-        <Image src={LOGO} alt='classic-world' display={{ base: 'none', md: 'flex' }}/>
-      
+
+      <a href="/">
+        <Image src="/Logo.jpg" alt='Vestra' display={{ base: 'none', md: 'flex' }} />
+      </a>
+
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>
       {LinkItems.map((link) => (
@@ -104,11 +105,11 @@ const SidebarContent = ({ onClose, ...rest }) => {
     </Box>
   );
 };
-const NavItem = ({ icon, children, item,...rest }) => {
+const NavItem = ({ icon, children, item, ...rest }) => {
   return (
     <NavLink to={item} style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
       <Flex
-        _groupActive={{color:'#990578'}}
+        _groupActive={{ color: '#990578' }}
         align="center"
         p="4"
         mx="4"
@@ -135,7 +136,7 @@ const NavItem = ({ icon, children, item,...rest }) => {
     </NavLink>
   );
 };
-const MobileNav = ({ onOpen,name, ...rest }) => {
+const MobileNav = ({ onOpen, name, ...rest }) => {
   return (
     <Flex
       ml={{ base: 0, md: 60 }}
@@ -154,11 +155,16 @@ const MobileNav = ({ onOpen,name, ...rest }) => {
         aria-label="open menu"
         icon={<FiMenu />}
       />
-      
-      <Image src={LOGO} alt='classic-world' width={"100px"}  display={{ base: 'flex', md: 'none' }}/>
-    
-      
-      <HStack spacing={{ base:0, md:3 }}  mr={{base:3,md:8}}>
+
+      <a href="/">
+        <Image 
+              src={'Logo.jpg'}
+              alt='Vastra' 
+              width={"100px"} 
+              display={{ base: 'flex', md: 'none' }} />
+      </a>
+
+      <HStack spacing={{ base: 0, md: 3 }} mr={{ base: 3, md: 8 }}>
         <IconButton
           size="lg"
           variant="ghost"
@@ -173,14 +179,14 @@ const MobileNav = ({ onOpen,name, ...rest }) => {
               _focus={{ boxShadow: 'none' }}>
               <HStack>
                 <Avatar size={'sm'}
-                  src={AdminProfile}>
+                  src={'/AdminProfile'}>
                   <AvatarBadge boxSize='1em' bg='green.500' />
-                  </Avatar>
+                </Avatar>
                 <VStack
                   display={{ base: 'none', md: 'flex' }}
                   alignItems="flex-start"
                   spacing="1px"
-                  >
+                >
                   <Text fontSize={'sm'} fontWeight={500} fontFamily={'sans-serif'}>{name}</Text>
                   <Text fontSize={'xs'} fontWeight={500} color="gray.600">
                     Admin

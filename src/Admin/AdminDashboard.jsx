@@ -19,9 +19,8 @@ const AdminDashboard = () => {
   const kd =  kidsData.length;
   const md =  mensData.length;
   const wd =  womensData.length;
-
   //console.log(kd,md,wd);
-  //#6476A3
+
   return (
     <Box minH="100vh" bg={'whiteAlpha.50'}  >
         <AdminNavbar/>

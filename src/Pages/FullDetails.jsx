@@ -4,7 +4,7 @@ import { Button } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
-import "../css/LoginOrSignUp.css";
+import "../Styles/LoginOrSignUp.css";
 import { saveData } from "./storage";
 
 const useDetails = {
@@ -23,7 +23,6 @@ export const FullDetails = () => {
   const handleChange = (e) => {
     setFullDetails({ ...fulldetails, [e.target.name]: e.target.value });
   };
-
   console.log(fulldetails);
 
   const handleSubmit = () => {
@@ -48,7 +47,7 @@ export const FullDetails = () => {
         </div>
 
         <div className="form">
-          <h1 className="formh1">Please Enter Your Full Details Here.</h1>
+          <h1 className="formh1">Please Enter Your Full Details Here:</h1>
           <div>
             <FormControl>
               <FormLabel>Name</FormLabel>

@@ -8,6 +8,7 @@ export const KidsNav=()=>{
         marginLeft: "-150px",
       }}
     >
+      <a href="/kids">
       <div className="flex">
         <div className="a1 k">
         <ul>
@@ -32,7 +33,7 @@ export const KidsNav=()=>{
         <li>Girls Clothing</li>
         <li>Dresses</li>
         <li>Tops</li>
-        <li>Tshirts</li>
+        <li>T-shirts</li>
         <li>Clothing Sets</li>
         <li>Lehenga choli</li>
         <li>Kurta Sets</li>
@@ -118,7 +119,7 @@ export const KidsNav=()=>{
       </ul>
         </div>
       </div>
+      </a>
     </div>
     )
-  
-  }
+}
