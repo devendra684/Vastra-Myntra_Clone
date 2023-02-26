@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router";
 import Home from "../Pages/Home";
-// import Login from "../Pages/Login";
 import PageNotFound from "../Pages/PageNotFound";
 // import Register from "../Pages/Register";
 import Product from "../Pages/Product";
@@ -18,6 +17,8 @@ import Wishlist from "../Pages/Wishlist";
 import Cart from "../Pages/Cart";
 import Payment from "../Pages/Payment";
 import Success from "../Pages/Success";
+import { LoginOrSignUp } from "../Pages/LoginOrSignUp";
+import { FullDetails } from "../Pages/FullDetails";
 
 const AllRoutes = () => {
   // console.log(userName);
@@ -32,7 +33,8 @@ const AllRoutes = () => {
         <Route path="/wishlist" element={<Wishlist />}></Route>
         <Route path="/bag" element={<Cart />} ></Route>
         <Route path="*" element={<PageNotFound />}></Route>
-        {/* <Route path="/login" element={<Login />}></Route> */}
+        <Route path="/login" element={<LoginOrSignUp/>} />
+        <Route path="/fulldetails" element={<FullDetails/>}/>
         {/* <Route path="/register" element={<Register />}></Route> */}
         <Route path="/admin-dashboard" element={<AdminDashboard />}></Route>
         <Route path="/add-products" element={<AddProductsPage />}></Route>

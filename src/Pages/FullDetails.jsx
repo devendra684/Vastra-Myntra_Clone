@@ -1,6 +1,8 @@
 import { FormControl, FormLabel } from "@chakra-ui/form-control";
 import { Input } from "@chakra-ui/input";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Navbar from "../Components/Navbar/Navbar";
 import "../css/LoginOrSignUp.css";
 import { saveData } from "./storage";
 
@@ -12,19 +14,23 @@ const useDetails = {
 
 export const FullDetails = () => {
   const [fulldetails, setFullDetails] = useState(useDetails);
+  const navigate=useNavigate()
 
   const handleChange = (e) => {
     setFullDetails({ ...fulldetails, [e.target.name]: e.target.value });
   };
+
   const handleSubmit = () => {
     console.log(fulldetails, "okay");
     saveData("details", fulldetails);
+    navigate("/")
+
   };
   console.log(fulldetails);
   return (
-    
-    <div className="Login_Master">
-        FUll Details
+  <div>
+    <Navbar/>
+     <div className="Login_Master">
       <div>
         <img
           src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/1/25/f5e9a029-33c3-4a92-811b-ef7917fe6d441674670210687-offer-banner-300-600x240-code-_-MYNTRA300.jpg"
@@ -33,7 +39,7 @@ export const FullDetails = () => {
       </div>
 
       <div className="form">
-        <h1 className="formh1">Details dala bhaiya jee</h1>
+        <h1 className="formh1">Please Enter Your Full Details Here</h1>
         <div>
           <FormControl>
             <FormLabel>Name</FormLabel>
@@ -64,5 +70,6 @@ export const FullDetails = () => {
         </div>
       </div>
     </div>
+  </div>
   );
 };
