@@ -46,7 +46,7 @@ const Navbar = () => {
               marginLeft: "15%",
               // marginRight: "30%",
             }}
-            src="VastraLogo.png"
+            src="/VastraLogo.png"
             // src={V_Logo}
 
             alt=""
@@ -213,7 +213,6 @@ const Navbar = () => {
             style={{
               // border: '1px solid red',
               wordWrap: "normal",
-              marginLeft: "15%",
               fontSize: "12px",
               width: "480px",
             }}
@@ -229,10 +228,10 @@ const Navbar = () => {
             justifyContent: "space-evenly",
             width: "20%",
             marginTop: "10px",
-            cursor: "pointer" 
+            cursor: "pointer",
           }}
         >
-          <p style={{ marginLeft: "4%",}}>
+          <p style={{ marginLeft: "4%" }}>
             <img
               style={{ fontSize: "12px", width: "20px", display: "inline" }}
               src="https://cdn-icons-png.flaticon.com/512/3106/3106773.png"
@@ -247,7 +246,10 @@ const Navbar = () => {
             </span>
           </p>
           <p style={{ marginLeft: "2%", cursor: "pointer" }}>
-            <img
+           
+            <span>
+              <Link to={"/wishlist"} className="rightLink">
+              <img
               style={{
                 marginLeft: "15%",
                 fontSize: "12px",
@@ -257,26 +259,11 @@ const Navbar = () => {
               src="https://cdn-icons-png.flaticon.com/512/7299/7299761.png"
               alt=""
             />
-            <span>
-              <Link to={"/wishlist"} className="rightLink">
                 Wishlist
               </Link>
             </span>
           </p>
-          {/* <Link
-               style={{
-                     // border: '1px solid red',
-                     wordWrap: 'normal',
-                  marginLeft: "2%",
-                  fontSize: "15px",
-                  textDecoration: "none",
-                  color: "#282C3F",
-                  whiteSpace: "nowrap"
-               }}
-               // to="/cart"
-               to={"/bag"}
-            > */}{" "}
-          {/* <p style={{ marginLeft: "2%", cursor: "pointer", gap:"0px" }}> */}
+
           <p
             style={{
               // border: '1px solid red',
@@ -285,7 +272,9 @@ const Navbar = () => {
               cursor: "pointer",
             }}
           >
-            <img
+            <span>
+              <Link to={"/bag"} className="rightLink">
+              <img
               style={{
                 marginLeft: "15%",
                 fontSize: "12px",
@@ -295,20 +284,32 @@ const Navbar = () => {
               src="https://cdn-icons-png.flaticon.com/512/1174/1174408.png"
               alt=""
             />
-
-            <span>
-              <Link
-                style={{
-                  marginLeft: "2%",
-                  fontSize: "12px",
-                  textDecoration: "none",
-                  color: "#282C3F",
-                  whiteSpace: "nowrap",
-                }}
-                to={"/bag"}
-                className="rightLink"
-              >
                 Bag
+              </Link>
+            </span>
+          </p>
+          {/* Admint */}
+          <p
+            style={{
+              // border: '1px solid red',
+              wordWrap: "normal",
+              marginLeft: "2%",
+              cursor: "pointer",
+            }}
+          >
+            <span>
+              <Link to={"/admin-dashboard"} className="rightLink">
+                <img
+                  style={{
+                    marginLeft: "15%",
+                    fontSize: "12px",
+                    width: "20px",
+                    marginBottom: "5px",
+                  }}
+                  src="/admin.png"
+                  alt=""
+                />
+                Admin
               </Link>
             </span>
           </p>
