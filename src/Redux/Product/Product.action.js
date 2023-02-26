@@ -1,14 +1,13 @@
-import {
-   getFilterByBrand,
-   getMensProductsAPI,
-   getProductsSorting,
-   getWomensFilterByBrand,
-   getWomensProductsAPI,
-   getWomensProductsSorting,
-   getKidsFilterByBrand,
-   getKidsProductsAPI,
-   getKidsProductsSorting
-} from "./Product.api"
+import { getFilterByBrand, 
+      getMensProductsAPI, 
+      getProductsSorting, 
+      getWomensFilterByBrand, 
+      getWomensProductsAPI, 
+      getWomensProductsSorting,
+      getKidsFilterByBrand, 
+      getKidsProductsAPI, 
+      getKidsProductsSorting
+   } from "./Product.api"
 import * as types from "./Product.type"
 
 export const getMensProducts = (page) => async (dispatch) => {

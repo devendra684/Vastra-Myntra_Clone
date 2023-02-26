@@ -27,7 +27,7 @@ export const BeautyNav = () => {
         <div className="a2 b">
           <ul>
             <li>Skincare, Bath & Body</li>
-            <li>Face Moisturiser</li>
+            <li>Face Mosturiser</li>
             <li>Cleanser</li>
             <li>Masks & Peel</li>
             <li>Sunscreen</li>

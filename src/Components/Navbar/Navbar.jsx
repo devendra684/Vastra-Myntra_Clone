@@ -276,7 +276,7 @@ const Navbar = () => {
               </Link>
             </span>
           </p>
-          {/* Admin */}
+          {/* Admin  */}
           <p
             style={{
               // border: '1px solid red',

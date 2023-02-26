@@ -7,7 +7,6 @@ export const HomeData = async () => {
   return res.data;
 };
 
-
 export const slider = [
   {
     id: 1,

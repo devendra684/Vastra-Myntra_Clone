@@ -49,7 +49,6 @@ function PaymentNavbar() {
                 >
                   {link.text}
                 </NavLink>
-
               </Box>
             ))
           }

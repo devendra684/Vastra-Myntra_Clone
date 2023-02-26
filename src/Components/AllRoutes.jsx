@@ -27,7 +27,7 @@ import AdminProfilePage from "../Admin/AdminProfilePage";
 // import { useNavigate } from "react-router-dom";
 
 const AllRoutes = () => {
-  // console.log(userName);
+  
   const [fulldetails, setFullDetails] = useState("");
   const [buttonLogging, setButtonLogging] = useState(false);
   // const navigate = useNavigate();

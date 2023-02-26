@@ -9,7 +9,7 @@ export const KidsNav=()=>{
       }}
     >
       <a href="/kids">
-      <div className="flex">
+        <div className="flex">
         <div className="a1 k">
         <ul>
         <li>Boys Clothing</li>

@@ -45,7 +45,7 @@ function SingleCard({ ...props }) {
   };
 
   return (
-    // <div className={Style.cardContainer}>
+    // < className={Style.cardContainer}>
     <Card
       border={"none"}
       _hover={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}
@@ -116,7 +116,6 @@ function SingleCard({ ...props }) {
         </Stack>
       </CardBody>
     </Card>
-    // </div>
   );
 }
 
