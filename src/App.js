@@ -10,11 +10,10 @@ function App() {
   return (
     <div className="App">
       <AllRoutes />
-      <Navbar />
-      
-      {/* <LoginOrSignUp/>   
-      <FullDetails/>
-      <Otp /> */}
+      <Navbar /> 
+      {/* <FullDetails/> */}
+      {/* <LoginOrSignUp />  */}
+      {/* <Otp />  */}
     </div>
   );
 }

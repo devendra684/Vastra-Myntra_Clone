@@ -98,7 +98,7 @@
     margin-top: 15px;
     position: absolute;
     display: none;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
     text-align: left;
     padding-left: 1%;
  }

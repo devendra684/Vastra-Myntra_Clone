@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Footer.css"
 
-export const Footer = () => {
+const Footer = () => {
     const footer1 = [
         {
             title: "ONLINESHOPPING",
@@ -52,3 +52,5 @@ export const Footer = () => {
         </div>
     )
 }
+
+export default Footer;
