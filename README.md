@@ -40,6 +40,11 @@ I have used React, Chakra, JS, Html, Css to made this project.
 
 ![WhatsApp Image 2023-02-27 at 11 52 33 AM](https://user-images.githubusercontent.com/100137935/221491278-a84741f8-39f1-4335-ab16-f09bf9460e98.jpeg)
 
+- ## <span style="color:blue"> Responsibnase </span>
+![Screenshot (288)](https://user-images.githubusercontent.com/103760487/221491995-1b0fbb94-618e-4093-808c-c60be7bda511.png)
+
+<br />
+
 <hr>
 
 # Collaborators (Team members):-
