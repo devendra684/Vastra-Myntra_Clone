@@ -1,18 +1,51 @@
-# Myntra Clone:-
- 
- 
-## Project code (incandescent-connection-5989)
+# <span style="color:red">[Vestra](https://vastra-rho.vercel.app) Clone of [Myntra.com](https://www.Myntra.com/) Website </span>
 
-## Collaborators (Team members):-
+# <span style="color:red"> Welcome to Vestra</span>
+
+![AdminProfile](https://user-images.githubusercontent.com/100137935/221491634-4c0c56fb-d7a2-4978-a2e2-3c7d9014c6e8.jpg)
 
 
-### Ruchi Priya Kumari (ruchipriya1009)
+Vestra is an E-commerce website for Trending Fashion wear and Clothes. This is a Team Project build in 4 days in Construct Week at Masai School.
 
-### Devendra Singh(devendra684)
+# <span style="color:red"> Tech Stack Used: </span>
 
-### Prince Sharma (i-m-prince)
+I have used React, Chakra, JS, Html, Css to made this project.
 
-### Ravi Kumar (ravikr2)
+### Snapshots of Vestra project :- 
 
-### VISHAL PRATAP (vishal97600)
+- ## <span style="color:blue"> Home Page: Header & Carousel </span>
+<br />
 
+![WhatsApp Image 2023-02-27 at 11 52 37 AM](https://user-images.githubusercontent.com/100137935/221490287-c50736f9-3697-4881-a070-ce74709b197f.jpeg)
+
+- ## <span style="color:blue"> Men Page </span>
+<br />
+
+![WhatsApp Image 2023-02-27 at 11 53 48 AM](https://user-images.githubusercontent.com/100137935/221491477-9b20e511-5ff9-40ac-9af1-a0f5231334c6.jpeg)
+
+
+- ## <span style="color:blue"> Women Page </span>
+<br />
+
+![WhatsApp Image 2023-02-27 at 11 53 49 AM](https://user-images.githubusercontent.com/100137935/221490593-f47193e8-86b6-40c4-bad3-e815ed5bbbb4.jpeg)
+
+- ## <span style="color:blue"> Login Page </span>
+<br />
+
+![WhatsApp Image 2023-02-27 at 11 52 32 AM](https://user-images.githubusercontent.com/100137935/221491141-ba2671b8-4581-4b1a-bcde-9f49506d932b.jpeg)
+
+
+- ## <span style="color:blue"> Admin Page </span>
+<br />
+
+![WhatsApp Image 2023-02-27 at 11 52 33 AM](https://user-images.githubusercontent.com/100137935/221491278-a84741f8-39f1-4335-ab16-f09bf9460e98.jpeg)
+
+<hr>
+
+# Collaborators (Team members):-
+- Devendra Singh(devendra684)
+- Prince Sharma (i-m-prince)
+- Ravi Kumar (ravikr2)
+- Ruchi Priya Kumari (ruchipriya1009)
+
+- ## <span style="color:green"> Thank You </span>
