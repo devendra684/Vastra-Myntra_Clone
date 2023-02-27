@@ -2,8 +2,7 @@
 
 # <span style="color:red"> Welcome to Vestra</span>
 
-![AdminProfile](https://user-images.githubusercontent.com/100137935/221491634-4c0c56fb-d7a2-4978-a2e2-3c7d9014c6e8.jpg)
-
+<img src='https://user-images.githubusercontent.com/100137935/221491634-4c0c56fb-d7a2-4978-a2e2-3c7d9014c6e8.jpg' width="500" height='200' justify-content= 'center'>
 
 Vestra is an E-commerce website for Trending Fashion wear and Clothes. This is a Team Project build in 4 days in Construct Week at Masai School.
 
@@ -39,11 +38,6 @@ I have used React, Chakra, JS, Html, Css to made this project.
 <br />
 
 ![WhatsApp Image 2023-02-27 at 11 52 33 AM](https://user-images.githubusercontent.com/100137935/221491278-a84741f8-39f1-4335-ab16-f09bf9460e98.jpeg)
-
-- ## <span style="color:blue"> Responsibnase </span>
-![Screenshot (288)](https://user-images.githubusercontent.com/103760487/221491995-1b0fbb94-618e-4093-808c-c60be7bda511.png)
-
-<br />
 
 <hr>
 
