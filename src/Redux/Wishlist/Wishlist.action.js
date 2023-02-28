@@ -2,7 +2,7 @@ import { fetchWishlistAPI, removeProd } from "./Wishlist.api"
 import * as types from "./Wishlist.type"
 
 export const fetchWishlistData = () => async (dispatch) => {
- try {
+    try {
         let data = await fetchWishlistAPI()
 
         dispatch({ type: types.GET_WISHLIST_SUCCESS, payload: data })
@@ -16,7 +16,7 @@ export const fetchWishlistData = () => async (dispatch) => {
 export const removeProdData = (id) => async (dispatch) => {
     try {
 
-         await removeProd(id)
+        await removeProd(id)
         //console.log("Data:", data)
 
         dispatch({ type: types.DELETE_PRODUCT_SUCCESS })
