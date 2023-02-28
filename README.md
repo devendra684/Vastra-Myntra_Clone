@@ -42,9 +42,9 @@ I have used React, Chakra, JS, Html, Css to made this project.
 <hr>
 
 # Collaborators (Team members):-
-- Devendra Singh(devendra684)
-- Prince Sharma (i-m-prince)
-- Ravi Kumar (ravikr2)
-- Ruchi Priya Kumari (ruchipriya1009)
+- Devendra Singh(Team Lead)
+- Prince Sharma
+- Ravi Kumar 
+- Ruchi Priya Kumari
 
 - ## <span style="color:green"> Thank You </span>
