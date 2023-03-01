@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-// import AdminProfile from '../Assets/AdminProfile.jpg';
 import {
   IconButton,
   Avatar,
