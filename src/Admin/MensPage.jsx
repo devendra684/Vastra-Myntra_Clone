@@ -134,7 +134,7 @@ const handleOpen=(id)=>{
               <Button onClick={onClose}>Cancel</Button>
           </ModalFooter>
       </ModalContent>
-   </Modal>
+    </Modal>
       </Box>
     </Box>
   );
