@@ -12,5 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "json-server": "^0.17.4"
+  },
+  "overrides": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2"
   }
 }
