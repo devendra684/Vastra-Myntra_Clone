@@ -10,7 +10,7 @@ Vestra (Myntra Clone) is a one stop shop for all your fashion and lifestyle need
 
 I have used React, Chakra, JS, Html, Css to made this project.
 
-### Snapshots of Vestra project :- 
+### Snapshots of Vestra project :-
 
 - ## <span style="color:blue"> Home Page: Header & Carousel </span>
 <br />
@@ -22,7 +22,6 @@ I have used React, Chakra, JS, Html, Css to made this project.
 
 ![WhatsApp Image 2023-02-27 at 11 53 48 AM](https://user-images.githubusercontent.com/100137935/221491477-9b20e511-5ff9-40ac-9af1-a0f5231334c6.jpeg)
 
-
 - ## <span style="color:blue"> Women Page </span>
 <br />
 
@@ -33,7 +32,6 @@ I have used React, Chakra, JS, Html, Css to made this project.
 
 ![WhatsApp Image 2023-02-27 at 11 52 32 AM](https://user-images.githubusercontent.com/100137935/221491141-ba2671b8-4581-4b1a-bcde-9f49506d932b.jpeg)
 
-
 - ## <span style="color:blue"> Admin Page </span>
 <br />
 
@@ -42,9 +40,10 @@ I have used React, Chakra, JS, Html, Css to made this project.
 <hr>
 
 # Collaborators (Team members):-
+
 - Devendra Singh(Team Lead)
 - Prince Sharma
-- Ravi Kumar 
+- Ravi Kumar
 - Ruchi Priya Kumari
 
 - ## <span style="color:green"> Thank You </span>
