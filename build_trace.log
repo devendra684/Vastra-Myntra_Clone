@@ -1,0 +1,12 @@
+
+> vastra@0.1.0 build
+> react-scripts build
+
+Creating an optimized production build...
+(node:25188) [DEP_WEBPACK_COMPILATION_NORMAL_MODULE_LOADER_HOOK] DeprecationWarning: Compilation.hooks.normalModuleLoader was moved to NormalModule.getCompilationHooks(compilation).loader
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Failed to compile.
+
+Module not found: Error: Can't resolve '@chakra-ui/form-control' in 'D:\Practice\GIT\Vastra-Myntra_Clone\src\Pages'
+
+

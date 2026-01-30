@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import AllRoutes from './Components/AllRoutes';
+import AllRoutes from './Components/AllRoutes.jsx';
 
 function App() {
   return (
