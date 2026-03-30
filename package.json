@@ -20,7 +20,7 @@
     "chart.js": "^4.2.1",
     "framer-motion": "^6.5.1",
     "json-server": "^0.17.1",
-    "node-forge": "^1.3.3",
+    "node-forge": "^1.4.0",
     "otp-input-react": "^0.3.0",
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.0",
@@ -39,7 +39,7 @@
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.2",
     "styled-components": "^4.1.3",
-    "tar": "^7.5.8",
+    "tar": "^7.5.13",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -57,7 +57,7 @@
     "ws": "^8.18.0",
     "eslint": "^8.57.1",
     "serialize-javascript": "^6.0.2",
-    "path-to-regexp": "^0.1.12 || ^1.9.0",
+    "path-to-regexp": "^0.1.13 || ^1.9.0",
     "ajv": "^8.17.1",
     "semver": "^6.3.1 || ^7.5.4",
     "@babel/traverse": "^7.26.2",
@@ -74,7 +74,10 @@
     "es5-ext": "^0.10.64",
     "brace-expansion": "^1.1.11",
     "@babel/runtime": "^7.26.2",
-    "tar": "^7.5.8"
+    "tar": "^7.5.13",
+    "picomatch": "^2.3.2",
+    "yaml": "^2.3.0",
+    "qs": "^6.15.0"
   },
   "eslintConfig": {
     "extends": [
